@@ -5,13 +5,14 @@
 @{
     ViewBag.Title = @WebApplication.Resources.EVAResource.WebsiteTitle;
 }
-
-<h2>Let's get started</h2>
+<script src="~/Scripts/angular/app.js"></script>
+<h2 ng-app="reviewmywebsite" ng-controller="loginController">Let's get started</h2>
 
 <div class="row clearfix">
     <div class="col-md-6">
         <p>
-            xxxxxxxxxxxxx
+            {{loadingText}}
+            {{nameer}}
         </p>
 
         <p class="">@Html.ActionLink(@WebApplication.Resources.EVAResource.createanewaccount, "CreateAccount", null, new { @class = "ifs-link-btn" })</p>
@@ -79,5 +80,5 @@
             </div>
 
         </div>
-
+ 
     }
