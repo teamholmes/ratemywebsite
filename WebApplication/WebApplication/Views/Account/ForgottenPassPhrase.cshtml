@@ -1,0 +1,82 @@
+﻿@model MyApp.Web.ViewModels.ForgottenPassPhraseAccountViewModel
+
+@{
+    ViewBag.Title = @MyApp.Web.Resources.EVAResource.WebsiteTitle;
+
+}
+
+
+@if (1 == 2 || Model.IsResetSuccessful.HasValue && Model.IsResetSuccessful == true)
+{
+    <h1>Your passphrase has been reset</h1>
+    <p class="summary">You passphrase has been reset and an email has been sent to you. This email contains your new passphrase.</p>
+    
+     <p class="summary">Please check your Junk/Spam folder to see if the email has been mistakenly placed there.</p>
+    @Html.ActionLink("Back to login screen", "Login", "Account",null,new { @class = "ifs-link-btn" })
+}
+else
+{
+    <h1>@MyApp.Web.Resources.EVAResource.forgotpasswordtitle</h1>
+    
+    <div class="row clearfix">
+        <div class="col-md-6">
+            <p class="summary"> If you have forgotten your passphrase we can issue a temporary passphrase via email. On order to do this, please enter the email address you used to register with this application.</p>
+            <p> @Html.ActionLink("Back to login screen", "Login", "Account",null,new { @class = "ifs-link-btn" })</p>
+        </div>
+        <div class="col-md-6">
+           @using (Html.BeginForm("ForgottenPassPhrase", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+            @Html.AntiForgeryToken()
+
+            @Html.InformationPanel(Model.Feedbackmessage)
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Email me a temporary passphrase</div>
+                    <div class="panel-body">
+
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">@MyApp.Web.Resources.EVAResource.emailaddress</label>
+
+                            <div class="col-md-8">
+                                @Html.TextBoxFor(m => m.EmailAddress, new { MaxLength = "100", @class = "form-control disablecopypaste", type = "email" })
+                                @Html.ValidationMessageFor(m => m.EmailAddress)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">@MyApp.Web.Resources.EVAResource.catchacode</label>
+
+                            <div class="col-md-3">
+                                @Html.TextBoxFor(m => m.Captcha, new { MaxLength = "7", @class = "form-control", autocomplete = "off", autocapitalize = "off" })
+                                @Html.ValidationMessageFor(m => m.Captcha)
+                                @Html.HiddenFor(m => m.CaptchaEncrypted)
+                            </div>
+
+                            <div class="col-md-5">
+                                <img src="/Account/GetCaptchaImage?enid=@Model.CaptchaEncrypted&cachecode=@DateTime.Now.Ticks&rnd=@Model.RandomInt" class="captchimage" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4"></label>
+
+                            <div class="col-md-8">
+                                @Html.SubmitButton(@MyApp.Web.Resources.EVAResource.sendmemypassphrase)
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+          
+        }
+        </div>
+    </div>
+
+    
+
+
+}

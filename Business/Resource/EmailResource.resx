@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="confirmaccountemailbody" xml:space="preserve">
+    <value>Dear Registrant,&lt;br/&gt;&lt;br/&gt;
+
+Thank you for creating your account. Please click on the link in the body of the email to verify your account and continue with your registration.&lt;br/&gt;&lt;br/&gt;
+
+&lt;a href="##LINK##"&gt;Verify my account&lt;/a&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="confirmaccountemailsubject" xml:space="preserve">
+    <value>Account Verification</value>
+  </data>
+  <data name="emailfooter" xml:space="preserve">
+    <value>&lt;br/&gt;&lt;br/&gt;Please note. This email was sent to you automatically, so please do not reply.</value>
+  </data>
+  <data name="passwordresetbody" xml:space="preserve">
+    <value>Dear ##firstname## ##surname##, &lt;br/&gt;&lt;br/&gt;
+Your temporary password is &lt;strong&gt;{0}&lt;/strong&gt;.&lt;br/&gt;&lt;br/&gt;
+Please follow this link to &lt;a href="##LINK##"&gt;reset your password&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;
+Kind Regards,&lt;br/&gt;
+My App&lt;br/&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="createsyatemaccountsendwelcomemeial" xml:space="preserve">
+    <value>Dear User, </value>
+  </data>
+  <data name="passwordresetsubject" xml:space="preserve">
+    <value>Passphrase Reset</value>
+  </data>
+  <data name="systemaccountcreatedsubject" xml:space="preserve">
+    <value>Account Created</value>
+  </data>
+  <data name="accouncreationsubject" xml:space="preserve">
+    <value>Confirmation of account creation</value>
+  </data>
+  <data name="accouncreationbody" xml:space="preserve">
+    <value>Dear ##firstname## ##surname##, &lt;br/&gt;&lt;br/&gt;
+'##emailaddress##'</value>
+  </data>
+  <data name="baseemailtemplate" xml:space="preserve">
+    <value>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body bgcolor="#ffffff" style="margin: 30px;font-family: Verdana, Arial, Verdana, Sans-Serif;" &gt;
+    &lt;!--STARTTEMPLATE--&gt;
+    &lt;table width="100%" border="0" cellpadding="3" cellspacing="3" style="max-width:960px;"&gt;
+        &lt;tr&gt;
+            &lt;td height="60" colspan="3" valign="top" style="font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #333333;"&gt;
+                &lt;p style="font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #333333;"&gt;
+                    ##HTMLBODYCONTENT##&lt;/p&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="3" valign="top" style="font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif;
+                color: #333333;"&gt;
+                &lt;br /&gt;
+                ##FOOTER##
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;!--ENDTEMPLATE--&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="ConfirmDetailsCorrect" xml:space="preserve">
+    <value>Dear ##firstname## ##surname##,
+</value>
+  </data>
+  <data name="ConfirmDetailsCorrectSubject" xml:space="preserve">
+    <value>Confirmation of details</value>
+  </data>
+  <data name="standardemaiaddress" xml:space="preserve">
+    <value>info@xxxxx.com</value>
+  </data>
+  <data name="welcomepackbody" xml:space="preserve">
+    <value>Dear ##firstname## ##surname##, &lt;br/&gt;&lt;br/&gt;
+'##emailaddress##'.&lt;br/&gt;&lt;br/&gt;
+Kind Regards&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="WelcomepackSubject" xml:space="preserve">
+    <value>subject here</value>
+  </data>
+</root>

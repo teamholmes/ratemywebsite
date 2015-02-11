@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License>
+  <Data>
+    <LicensedTo>open platform</LicensedTo>
+    <LicenseType>Developer Small Business</LicenseType>
+    <LicenseNote>Limited to 1 developer.</LicenseNote>
+    <OrderID>110715073526</OrderID>
+    <OEM>This is not a non-redistributable license</OEM>
+    <Products>
+      <Product>Aspose.Cells for .NET</Product>
+    </Products>
+    <EditionType>Enterprise</EditionType>
+    <SerialNumber>4f15dd3c-5fd2-424a-a99f-73c3f6a95a7b</SerialNumber>
+    <SubscriptionExpiry>20120715</SubscriptionExpiry>
+    <LicenseVersion>2.2</LicenseVersion>
+  </Data>
+  <Signature>FI/jnDwR5Eo8rnKz2nsJkFJyBLYxGkpBAdGV/iKPDop2owVB2pNusAXRtwBV8l4PczEyCUMei3hnAKjfr3Iuhf0o93EQ695sh3GY2aYV0KOAtMUsWifalRIHs63a52MvrTGk/wrxp4J6jgMgVbw+e08ZkyVocZBYzTK4VOsQifY=</Signature>
+</License>

@@ -1,0 +1,21 @@
+--7647ca3a-1d4f-44a3-921c-d5a1ec21f4ac
+
+------------- APPCONFIGURTIONKEY
+INSERT [dbo].[AppConfiguration] ([Id], [Key], [Value]) VALUES (N'06DDB8ED-7D38-42CA-A85A-CE69AF9BE6CF', N'DisableLogin', N'false')
+GO
+INSERT [dbo].[AppConfiguration] ([Id], [Key], [Value]) VALUES (N'235965EC-DB2D-4431-B133-DCEAC89E32F3', N'FromEmailAddress', N'donotreply@openplatform.co.uk')
+GO
+
+
+-- ASPONETUSERS
+INSERT [dbo].[AspNetUsers] ([Id], [UserName], [PasswordHash], [SecurityStamp], [Discriminator], [Firstname], [Surname], [IsActive], [IsTemporaryPassPhrase], [TeamConfirmationURL], [LastPasswordFailureDate], [PasswordFailuresSinceLastSuccess], [IsConfirmed], [PasswordChangedDate], [Email], [EmailConfirmed], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEndDateUtc], [LockoutEnabled], [AccessFailedCount], [LastLoginDate]) VALUES (N'7647ca3a-1d4f-44a3-921c-d5a1ec21f4ac', N'info@openplatform.co.uk', N'Eukg12Rme4g826Stsv/s6ZTcI7VzBBcruwr/6wwH9XE=', NULL, N'BASE_APP', N'info@openplatform.co.uk', N'russell5@openplatform.co.uk', 1, 0, NULL, NULL, 0, 1, '2020-01-14 17:23:34.970', N'info@openplatform.co.uk', 0, N'info@openplatform.co.uk', 0, 0, NULL, 0, 0, NULL)
+GO
+
+
+-- CLAIMS
+SET IDENTITY_INSERT [dbo].[AspNetUserClaims] ON 
+INSERT [dbo].[AspNetUserClaims] ([Id], [ClaimType], [ClaimValue], [User_Id]) VALUES (1, N'ROLE', N'DEV', N'7647ca3a-1d4f-44a3-921c-d5a1ec21f4ac')
+
+GO
+SET IDENTITY_INSERT [dbo].[AspNetUserClaims] OFF
+GO

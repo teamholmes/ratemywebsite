@@ -1,0 +1,17 @@
+﻿@model MyApp.Web.ViewModels.SendTestEmailViewModel
+
+@using (Html.BeginForm("SendTestEmail", "Dev", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.ValidationSummary()
+    @Html.AntiForgeryToken()
+
+    
+    <p>Sender Name : @Model.senderName</p>
+    <p>Email address of recipient : @Html.TextBoxFor(x=>x.emailaddress)</p> 
+    <p>Email from address : @Html.TextBoxFor(x=>x.fromemailaddress)</p> 
+     <p>BCC : @Html.TextBoxFor(x=>x.bccEmailAddress)</p> 
+     <p>Subject : @Html.TextAreaFor(x=>x.subject)</p> 
+     <p>Body of Email : @Html.TextAreaFor(x=>x.boodycopy)</p> 
+    <p>@Html.SubmitButton()</p>
+        
+}

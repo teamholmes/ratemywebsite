@@ -1,0 +1,14 @@
+﻿@model MyApp.Web.ViewModels.DecryptViewModel
+
+@using (Html.BeginForm("Decrypt", "Dev", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.ValidationSummary()
+    @Html.AntiForgeryToken()
+
+    <p>Encrypted text : @Html.TextAreaFor(x=>x.encrypted, new {rows="4", cols="100"})</p> 
+    <p>Decrypted text : @Html.TextAreaFor(x=>x.decrypted, new {rows="4", cols="100"})</p> 
+     <p>@Html.SubmitButton()</p>
+     @Html.Raw(Model.result)
+   
+        
+}

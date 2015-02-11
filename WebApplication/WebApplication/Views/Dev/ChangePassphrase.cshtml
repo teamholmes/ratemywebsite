@@ -1,0 +1,18 @@
+﻿@model MyApp.Web.ViewModels.ChangePassPhraseViewModel
+
+@using (Html.BeginForm("ChangePassphrase", "Dev", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.ValidationSummary()
+    @Html.AntiForgeryToken()
+
+    <p>Email Address of user : @Html.TextBoxFor(x => x.EmailAddress)</p> 
+    @Html.ValidationMessageFor(x => x.EmailAddress)
+    <p>New Passphrase (Min 15 characters): @Html.TextBoxFor(x => x.NewPassphrase)</p> 
+    @Html.ValidationMessageFor(x => x.NewPassphrase)
+     <p>Validation Code: @Html.TextBoxFor(x => x.ValidationCode)</p> 
+    @Html.ValidationMessageFor(x => x.ValidationCode)
+    <p>@Html.SubmitButton()</p>
+    <p>@Model.result</p>
+   
+        
+}

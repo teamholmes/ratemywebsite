@@ -1,0 +1,91 @@
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\OpenPlatform.General.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\OpenPlatform.General.pdb
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\AutoMapper.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\EntityFramework.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\System.Web.Helpers.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\System.Web.Mvc.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\System.Web.Razor.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\System.Web.WebPages.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\AutoMapper.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\EntityFramework.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\System.Web.Helpers.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\System.Web.Mvc.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\System.Web.Razor.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\System.Web.WebPages.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\obj\Debug\General.csprojResolveAssemblyReference.cache
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\obj\Debug\OpenPlatform.General.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\General\obj\Debug\OpenPlatform.General.pdb
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\OpenPlatform.General.dll
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\OpenPlatform.General.pdb
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\System.Web.Helpers.dll
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\System.Web.Razor.dll
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\System.Web.WebPages.dll
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\System.Web.Helpers.xml
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\System.Web.Razor.xml
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\System.Web.WebPages.xml
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Russell\Desktop\MVC5\General\obj\Debug\OpenPlatform.General.dll
+C:\Users\Russell\Desktop\MVC5\General\obj\Debug\OpenPlatform.General.pdb
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\EntityFramework.dll
+C:\Users\Russell\Desktop\MVC5\General\bin\Debug\EntityFramework.xml
+C:\Users\Russell\Desktop\MVC5\General\obj\Debug\General.csprojResolveAssemblyReference.cache
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\OpenPlatform.General.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\OpenPlatform.General.pdb
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\EntityFramework.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\System.Web.Helpers.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\System.Web.Razor.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\System.Web.WebPages.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\EntityFramework.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\System.Web.Helpers.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\System.Web.Razor.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\System.Web.WebPages.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\obj\Debug\General.csprojResolveAssemblyReference.cache
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\obj\Debug\OpenPlatform.General.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\General\obj\Debug\OpenPlatform.General.pdb
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\OpenPlatform.General.dll
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\OpenPlatform.General.pdb
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\EntityFramework.dll
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\System.Web.Helpers.dll
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\System.Web.Razor.dll
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\System.Web.WebPages.dll
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\System.Web.WebPages.Razor.dll
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\EntityFramework.xml
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\System.Web.Helpers.xml
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\System.Web.Razor.xml
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\System.Web.WebPages.xml
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\GitHub\ratemywebsite\ratemywebsite\General\bin\Debug\System.Web.WebPages.Razor.xml
+C:\GitHub\ratemywebsite\ratemywebsite\General\obj\Debug\General.csprojResolveAssemblyReference.cache
+C:\GitHub\ratemywebsite\ratemywebsite\General\obj\Debug\OpenPlatform.General.dll
+C:\GitHub\ratemywebsite\ratemywebsite\General\obj\Debug\OpenPlatform.General.pdb

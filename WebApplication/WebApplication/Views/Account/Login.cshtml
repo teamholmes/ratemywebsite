@@ -1,0 +1,101 @@
+﻿@model MyApp.Web.ViewModels.LoginViewModel
+@using OP.General.Extensions;
+@using MyApp.Web.Helpers;
+
+@{
+    ViewBag.Title = @MyApp.Web.Resources.EVAResource.WebsiteTitle;
+}
+
+<h2>Let's get started</h2>
+
+<div class="row clearfix">
+    <div class="col-md-6">
+        <p>
+          xxxxxxxxxxxxx
+        </p>
+
+
+
+
+        <p class="">@Html.ActionLink(@EVAResource.createanewaccount, "CreateAccount", null, new { @class = "ifs-link-btn" })</p>
+
+    </div>
+
+    @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Login</div>
+                <div class="panel-body">
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">@MyApp.Web.Resources.EVAResource.emailaddress</label>
+
+                        <div class="col-md-8">
+                            @Html.TextBoxFor(m => m.EmailAddress, new { MaxLength = "100", @class = "form-control", type = "email", autocapitalize = "off" })
+                            @Html.ValidationMessageFor(m => m.EmailAddress)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Passphrase</label>
+
+                        <div class="col-md-8">
+                            @Html.PasswordFor(m => m.Passphrase, new { MaxLength = "100", @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Passphrase)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Verification code</label>
+
+                        <div class="col-md-3">
+                            @Html.TextBoxFor(m => m.Captcha, new { MaxLength = "7", @class = "form-control", autocomplete = "off", autocapitalize = "off" })
+                            @Html.ValidationMessageFor(m => m.Captcha)
+                            @Html.HiddenFor(x => x.EncryptedCaptcha)
+                        </div>
+
+                        <div class="col-md-5">
+                            <img src="/Account/GetCaptchaImage?enid=@Model.EncryptedCaptcha&cachecode=@DateTime.Now.Ticks&rnd=@Model.RandomInt" class="captchimage" />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4"></label>
+
+                        <div class="col-md-8">
+                            @Html.SubmitButton(@MyApp.Web.Resources.EVAResource.submit)
+                        </div>
+
+                    </div>
+                    <p class="linebreaktop">@Html.ActionLink(@MyApp.Web.Resources.EVAResource.createanewaccount, "CreateAccount", null, new { @class = "ifs-link-btn" })</p>
+
+                    <p>@Html.ActionLink(@MyApp.Web.Resources.EVAResource.helpwithaccountproblems, "ForgottenPassPhrase", null, new { @class = "ifs-link-btn" })</p>
+
+                   
+
+                </div>
+
+
+            </div>
+
+        </div>
+        
+       
+    }
+    @*<div class="col-md-12">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p>
+                N.B. The information gathered through the online application tool will be used throughout your auto<br />
+                enrolment setup.
+            </p>
+        </div>
+        <div class="col-md-2"></div>
+
+
+    </div>*@
+</div>
+

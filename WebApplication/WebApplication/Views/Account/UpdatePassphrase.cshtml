@@ -1,0 +1,119 @@
+﻿@model MyApp.Web.ViewModels.UpdatePassPhraseAccountViewModel
+
+
+@{
+    ViewBag.Title = @MyApp.Web.Resources.EVAResource.WebsiteTitle;
+
+}
+
+
+
+@if (1 == 2 || Model.ShowPassPhraseUpdateSuccess == true)
+{
+    <h1>Success</h1>
+    
+    <p class="summary">@MyApp.Web.Resources.EVAResource.passphrasesuccessfullychanged</p>
+   
+    @Html.ActionLink(@MyApp.Web.Resources.EVAResource.Backtohomescreen, "Login", "Account", null)
+
+}
+else
+{
+    <h3>Updating your passphrase</h3>
+    
+    
+    <div class="row clearfix">
+        <div class="col-md-6">
+            For security reasons, we need you to change your existing/temporary passphrase.
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Your account
+                </div>
+                <div class="panel-body">
+
+                    <p class="notification">
+                        @if (Model.ReasonEnum == MyApp.Business.DomainObjects.Models.BusinessEnum.AuthenticationResult.TempPasswordIssued)
+                        {
+                            @MyApp.Web.Resources.EVAResource.youmustchangeyourtemporarypassphrase
+                        }
+                        else
+                        {
+                            @MyApp.Web.Resources.EVAResource.Yourpassphrasehasexpired
+                        }
+                    </p>
+
+                    @using (Html.BeginForm("UpdatePassphrase", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
+                    {
+
+                        @Html.AntiForgeryToken()
+
+                       
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Email address</label>
+                            <div class="col-md-8">
+                                @Html.TextBoxFor(m => m.EmailAddress, new { MaxLength = "100", @class = "form-control", type = "email" })
+                                @Html.ValidationMessageFor(m => m.EmailAddress)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Existing passphrase</label>
+                            <div class="col-md-8">
+                                @Html.PasswordFor(m => m.ExistingPassword, new { MaxLength = "100", @class = "form-control" })
+                                <span class="help-block">The temporary or existing passphrase you have been issued</span>
+                                @Html.ValidationMessageFor(m => m.ExistingPassword)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">New passphrase</label>
+                            <div class="col-md-8">
+                                @Html.PasswordFor(m => m.NewPassPhrase, new { MaxLength = "100", @class = "form-control disablecopypaste" })
+                                @Html.ValidationMessageFor(m => m.NewPassPhrase)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Confirm passphrase</label>
+                            <div class="col-md-8">
+                                @Html.PasswordFor(m => m.ConfirmNewPassPhrase, new { MaxLength = "100", @class = "form-control disablecopypaste" })
+                                @Html.ValidationMessageFor(m => m.ConfirmNewPassPhrase)
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Verification Code</label>
+                            <div class="col-md-3">
+                                @Html.TextBoxFor(m => m.Captcha, new { MaxLength = "7", @class = "form-control", autocomplete = "off" })
+                                @Html.ValidationMessageFor(m => m.Captcha)
+                                @Html.HiddenFor(x => x.EncryptedCaptcha)
+                            </div>
+                            <div class="col-md-5">
+                                <img src="/Account/GetCaptchaImage?enid=@Model.EncryptedCaptcha&cachecode=@DateTime.Now.Ticks&rnd=@Model.RandomInt" class="captchimage" />
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4"></label>
+                            <div class="col-md-8">
+                                @Html.SubmitButton(@MyApp.Web.Resources.EVAResource.updatemypassphrase)
+                                @Html.HiddenFor(x => x.P1)
+                                @Html.HiddenFor(x => x.P2)
+                                @Html.HiddenFor(x => x.ReasonEnum)
+                                @Html.HiddenFor(x => x.HasComeFromHomePage)
+                            </div>
+                        </div>
+
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

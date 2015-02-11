@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License>
+  <Data>
+    <LicensedTo>open platform</LicensedTo>
+    <LicenseType>Developer Small Business</LicenseType>
+    <LicenseNote>Limited to 1 developer.</LicenseNote>
+    <OrderID>110715073526</OrderID>
+    <OEM>This is not a non-redistributable license</OEM>
+    <Products>
+      <Product>Aspose.Words for .NET</Product>
+    </Products>
+    <EditionType>Enterprise</EditionType>
+    <SerialNumber>b7876cb4-25dd-4862-9b0b-ade4be7f7db0</SerialNumber>
+    <SubscriptionExpiry>20120715</SubscriptionExpiry>
+    <LicenseVersion>2.2</LicenseVersion>
+  </Data>
+  <Signature>Jcq8uhmhLSzn7tg7dZ+O1RqhMiA6NetRqT+YjxrnNdo8of2x2TD5nBW/qt2Tnhs6l246UoboDS37/U60/Q2ptvQ5sI3pDPUb0oTD4zpbJ6ABHDAwcuxw6b5XzGm4L7cQ2VU1ErjiK+WaP+XFWDGJ5wMlaL6e96iWSnWQwt7dNEo=</Signature>
+</License>

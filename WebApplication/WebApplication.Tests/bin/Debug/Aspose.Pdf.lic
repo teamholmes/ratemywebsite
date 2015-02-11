@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License>
+  <Data>
+    <LicensedTo>open platform</LicensedTo>
+    <LicenseType>Developer Small Business</LicenseType>
+    <LicenseNote>Limited to 1 developer.</LicenseNote>
+    <OrderID>130816041441</OrderID>
+    <OEM>This is not a redistributable license</OEM>
+    <Products>
+      <Product>Aspose.Pdf for .NET</Product>
+    </Products>
+    <EditionType>Enterprise</EditionType>
+    <SerialNumber>af930e8a-141c-43d6-9826-22d6b1e15b96</SerialNumber>
+    <SubscriptionExpiry>20140816</SubscriptionExpiry>
+    <LicenseVersion>2.2</LicenseVersion>
+  </Data>
+  <Signature>Dx4PifRPvCUB5jBleMrGwe13Gpr8p8PBHQgiUjFVwlBFYbQCinjth84gPauQUFpSh1uFZii7gqLDc5DZjLEiKgZfq+kUpqa2NPBm5vZ+tZ9RRSaxFlABh8XaeGqqNPLXzJ6FpdDWuUc4mlSIecXhe3A3NpKlqZMD4OLJrARJWHQ=</Signature>
+</License>

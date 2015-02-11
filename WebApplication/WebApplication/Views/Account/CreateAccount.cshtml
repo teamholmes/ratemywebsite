@@ -1,0 +1,134 @@
+﻿
+@model MyApp.Web.ViewModels.CreateAccountViewModel
+
+@{
+    ViewBag.Title = "Create account";
+}
+<h1>Getting started</h1>
+
+
+
+<div class="row clearfix">
+    <div class="col-md-6">
+        <p>
+            In order to use our system, we need you to create an account.</p>
+        
+        <p>Setting up an account is quick and easy. Complete the form to the right and we can have you up and running within minutes.</p>
+        <p>@Html.ActionLink("Already registered? - Login here", "Login", null,new { @class = "ifs-link-btn" })</p>
+    </div>
+
+
+    @using (Html.BeginForm("CreateAccount", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        @Html.AntiForgeryToken()
+    
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Create a new account</div>
+                <div class="panel-body">
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">First name</label>
+
+                        <div class="col-md-8">
+                            @Html.TextBoxFor(m => m.FirstName, new { MaxLength = "75", @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.FirstName)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Surname</label>
+
+                        <div class="col-md-8">
+                            @Html.TextBoxFor(m => m.Surname, new { MaxLength = "75", @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Surname)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Contact number</label>
+
+                        <div class="col-md-8">
+                            @Html.TextBoxFor(m => m.ContactNumber, new { MaxLength = "75", @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.ContactNumber)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Email address</label>
+
+                        <div class="col-md-8">
+                            @Html.TextBoxFor(m => m.EmailAddress, new { MaxLength = "75", @class = "form-control disablecopypaste", type = "email" })
+                            @Html.ValidationMessageFor(m => m.EmailAddress)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Confirm email address</label>
+
+                        <div class="col-md-8">
+                            @Html.TextBoxFor(m => m.ConfirmEmailAddress, new { MaxLength = "75", @class = "form-control disablecopypaste", type = "email" })
+                            @Html.ValidationMessageFor(m => m.ConfirmEmailAddress)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Passphrase</label>
+
+                        <div class="col-md-8">
+                            @Html.PasswordFor(m => m.Passphrasepart1, new { MaxLength = "75", @class = "form-control disablecopypaste" })
+                            <span class="help-block">@MyApp.Web.Resources.EVAResource.passphrasetext</span>
+                            @Html.ValidationMessageFor(m => m.Passphrasepart1)
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Confirm passphrase</label>
+
+                        <div class="col-md-8">
+                            @Html.PasswordFor(m => m.Passphrasepart2, new { MaxLength = "75", @class = "form-control disablecopypaste" })
+                            @Html.ValidationMessageFor(m => m.Passphrasepart2)
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Verification Code</label>
+
+                        <div class="col-md-3">
+                            @Html.TextBoxFor(m => m.Captcha, new { MaxLength = "7", @class = "form-control" , autocomplete = "off"})
+                           
+                            @Html.ValidationMessageFor(m => m.Captcha)
+                            @Html.HiddenFor(x => x.EncryptedCaptch)
+                            @Html.HiddenFor(x => x.EncryptedType)
+                        </div>
+
+                        <div class="col-md-5">
+                            <img src="/Account/GetCaptchaImage?enid=@Model.EncryptedCaptch&cachecode=@DateTime.Now.Ticks&rnd=@Model.RandomInt" class="captchimage" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4"></label>
+
+                        <div class="col-md-8">
+                            @Html.SubmitButton(@MyApp.Web.Resources.EVAResource.CreateAccountSubmitButton)
+                        </div>
+
+                    </div>
+
+                    <p class="linebreaktop">@Html.ActionLink("Already registered? - Login here", "Login", null,new { @class = "ifs-link-btn" })</p>
+                </div>
+
+
+            </div>
+
+        </div>
+    
+    }
+
+</div>
+
+<script src="~/Scripts/op.copypaste.js" type="text/javascript"></script>
+

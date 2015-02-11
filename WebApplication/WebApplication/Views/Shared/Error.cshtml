@@ -1,0 +1,249 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@using OP.General.Extensions
+@using System.Collections;
+@using System.Text;
+@using System.Configuration;
+@using System.Collections.Specialized;
+@using System.Net.Mail;
+
+@{
+    ViewBag.Title = "Error";
+}
+@*@if (Model != null)
+{
+    Model = new HandleErrorInfo { Exception = new Exception("Page cannot be found") };
+}*@
+<hgroup class="title">
+    <h2 class="error">Oops!</h2>
+    <h3 class="error">Looks as if we hit a small technical glitch.</h3>
+    @if (Model != null && Model.Exception.Message.Contains("session") && Model.Exception.Message.Contains("expired"))
+    {
+        <p>Unfortunately your session has expired. Click on the link below to login.</p>
+    }
+    else
+    {
+        <p>We have sent an email to our boffins and they are going to take a look at the problem.</p>
+        <p>Please bear with us.</p>
+
+        <p>Date stamp : @DateTime.Now.ToShortDateString() @DateTime.Now.ToShortTimeString()</p>
+    }
+    @Html.ActionLink(@GeneralResource.returntologin, "LogOff", "Account", null, new { @class = "ifs-link-btn" })
+    <div class="hiddentext" style="visibility: hidden;">
+        @Model.Exception.Message.Encrypt()
+    </div>
+
+    @if (Request.ServerVariables["server_name"] != null && Request.ServerVariables["server_name"].ToString().IsNotNullOrEmpty() && Request.ServerVariables["server_name"].ToString().StartsWith("localhost"))
+    {
+        <p><i>Below is only shown in localhost mode</i></p>
+        <p>
+            @Model.Exception.Message
+        </p>
+
+    }
+
+    @{
+
+        try
+        {
+            StringBuilder _msg = new StringBuilder();
+            Exception _lasterror = Model.Exception;
+            Exception _baseerror = Model.Exception.GetBaseException();
+
+            string[] dontemailifbaseexceptionmessageincludes = new string[]
+            {
+                "The required anti-forgery cookie",
+                "The session has expired"
+            };
+
+            _msg.Append("Base Exception Message : ").Append(Server.HtmlEncode(_baseerror.Message.ToString())).Append("<br />");
+
+            _msg.Append("<div style=\"margin: 5px; padding: 5px; border: 1px solid #666;\"><div style=\"font-weight: bold; font-size: 125%;\">Request Info</div>");
+            _msg.Append("IP:").Append(Request.ServerVariables["REMOTE_ADDR"].ToString()).Append("<br />");
+            _msg.Append("Page:").Append(Request.ServerVariables["PATH_INFO"]).Append("<br />");
+            _msg.Append("Querystring: ").Append(Request.QueryString.ToString()).Append("<br />");
+            _msg.Append("Page Referer:").Append(Request.ServerVariables["HTTP_REFERER"]).Append("</div>");
+
+            // Server Variables
+            _msg.Append("<div style=\"margin: 5px; padding: 5px; border: 1px solid #666;\"><div style=\"font-weight: bold; font-size: 125%;\">Server Variables</div>");
+            foreach (string key in Request.ServerVariables)
+            {
+                _msg.Append(Server.HtmlEncode(key)).Append(":");
+                if (Request.ServerVariables[key] != null)
+                {
+                    _msg.Append(Server.HtmlEncode(Request.ServerVariables[key].ToString()));
+                }
+                _msg.Append("<br />");
+            }
+            _msg.Append("</div>");
+
+            // Form Variables
+            _msg.Append("<div style=\"margin: 5px; padding: 5px; border: 1px solid #666;\"><div style=\"font-weight: bold; font-size: 125%;\">Form Variables</div>");
+            foreach (string key in Request.Form)
+            {
+                _msg.Append(Server.HtmlEncode(key)).Append(":").Append(Server.HtmlEncode(Request.Form[key].ToString())).Append("<br />");
+            }
+            _msg.Append("</div>");
+
+            // Base Exception Variables
+            _msg.Append("<div style=\"margin: 5px; padding: 5px; border: 1px solid #666;\"><div style=\"font-weight: bold; font-size: 125%;\">Base Exception Details</div>");
+            _msg.Append("Message:").Append(Server.HtmlEncode(_baseerror.Message.ToString())).Append("<br />");
+            _msg.Append("Source:").Append(Server.HtmlEncode(_baseerror.Source.ToString())).Append("<br />");
+            _msg.Append("Target Site:").Append(Server.HtmlEncode(_baseerror.TargetSite.ToString())).Append("<br />");
+            _msg.Append("Stack Trace:").Append(Server.HtmlEncode(_baseerror.StackTrace.ToString()).Replace("\n", "<br />")).Append("<br />");
+            // Exception Data
+            _msg.Append("<div style=\"margin: 5px; padding: 5px; border: 1px solid #666;font-size: 90%\"><div style=\"font-weight: bold; font-size: 110%;\">Data</div>");
+            foreach (DictionaryEntry de in _baseerror.Data)
+            {
+                _msg.Append(Server.HtmlEncode(de.Key.ToString())).Append(":").Append(Server.HtmlEncode(de.Value.ToString())).Append("<br />");
+            }
+            _msg.Append("</div></div>");
+
+            // Top Level Exception Variables
+            _msg.Append("<div style=\"margin: 5px; padding: 5px; border: 1px solid #666;\"><div style=\"font-weight: bold; font-size: 125%;\">Top Level Exception Details</div>");
+            _msg.Append("Message:").Append(Server.HtmlEncode(_lasterror.Message.ToString())).Append("<br />");
+            _msg.Append("Source:").Append(Server.HtmlEncode(_lasterror.Source.ToString())).Append("<br />");
+            _msg.Append("Target Site:").Append(Server.HtmlEncode(_lasterror.TargetSite.ToString())).Append("<br />");
+            _msg.Append("Stack Trace:").Append(Server.HtmlEncode(_lasterror.StackTrace.ToString()).Replace("\n", "<br />")).Append("<br />");
+            // Exception Data
+            _msg.Append("<div style=\"margin: 5px; padding: 5px; border: 1px solid #666;font-size: 90%\"><div style=\"font-weight: bold; font-size: 110%;\">Data</div>");
+            foreach (DictionaryEntry de in _lasterror.Data)
+            {
+                _msg.Append(Server.HtmlEncode(de.Key.ToString())).Append(":").Append(Server.HtmlEncode(de.Value.ToString())).Append("<br />");
+            }
+            _msg.Append("</div></div>");
+
+            // Add previous stored error
+            _msg.Append("<div style=\"margin: 5px; padding: 5px; border: 1px solid #666;\"><div style=\"font-weight: bold; font-size: 125%;\">Previous Exception</div>");
+            if (HttpContext.Current.Application["1_LastErrorMessage"] != null)
+            {
+                _msg.Append("Time:").Append(Server.HtmlEncode(HttpContext.Current.Application["1_LastErrorTime"].ToString())).Append("<br />");
+                _msg.Append("Message:").Append(Server.HtmlEncode(HttpContext.Current.Application["1_LastErrorMessage"].ToString())).Append("<br />");
+                _msg.Append("Source:").Append(Server.HtmlEncode(HttpContext.Current.Application["1_LastErrorSource"].ToString())).Append("<br />");
+                _msg.Append("Target Site:").Append(Server.HtmlEncode(HttpContext.Current.Application["1_LastErrorTargetSite"].ToString())).Append("<br />");
+                _msg.Append("Stack Trace:").Append(Server.HtmlEncode(HttpContext.Current.Application["1_LastErrorStackTrace"].ToString()).Replace("\n", "<br />"));
+            }
+            else
+            {
+                _msg.Append("No Previous Exception Stored");
+            }
+            _msg.Append("</div>");
+
+            _msg.Append("<div style=\"margin: 5px; padding: 5px; border: 1px solid #666;font-size: 90%\"><div style=\"font-weight: bold; font-size: 110%;\">ACTIVITY LOG - Most recent at top<br/></div>");
+
+            string applogkey = "BACKLOGKEYFORAPP";
+
+            try
+            {
+                if (HttpContext.Current.Application[applogkey] != null)
+                {
+                    foreach (string str in ((List<string>)HttpContext.Current.Application[applogkey]).AsEnumerable().Reverse())
+                    {
+                        _msg.Append(String.Format("{0}{1}", str, "<br><br />"));
+                    }
+                }
+            }
+            catch (Exception err)
+            {
+                // do nothing
+            }
+
+            _msg.Append("</div>");
+
+
+
+            // Check if time since last error is more than 5 minutes (or none stored)
+            bool sendError = false;
+            int ErrorLimit = 5; // 5 Minutes
+            DateTime ErrorLimitTime = DateTime.Now.AddMinutes(-ErrorLimit);
+            DateTime LastErrorTime = (DateTime)(HttpContext.Current.Application["1_LastErrorTime"] ?? ErrorLimitTime);
+            StringBuilder errornosent = new StringBuilder();
+            sendError = (bool)(DateTime.Compare(ErrorLimitTime, LastErrorTime) >= 0);
+
+
+            //Identifier for error and subject of email
+            string _ErrorIdentifier = _baseerror.TargetSite.Module.ScopeName + " - " + _baseerror.TargetSite.Name + " - " + _baseerror.Message;
+
+            // test to see if this is a new error if not already sending email
+            if (!sendError)
+            {
+                errornosent.Append(string.Format("Within Error Time Limit - {0} - {1}", ErrorLimitTime, LastErrorTime));
+                sendError = (bool)(HttpContext.Current.Application["1_LastErrorIdentifier"].ToString() != _ErrorIdentifier);
+                if (!sendError)
+                {
+                    errornosent.AppendLine("Same Error Message.");
+                }
+            }
+
+            Boolean isoktoemailbasedonexception = true;
+
+            foreach (string str in dontemailifbaseexceptionmessageincludes)
+            {
+                if (_baseerror.Message.ToString().Contains(str))
+                {
+                    isoktoemailbasedonexception = false;
+                    break;
+                }
+            }
+
+
+            // Store error details for next time
+            HttpContext.Current.Application["1_LastErrorIdentifier"] = _ErrorIdentifier;
+            HttpContext.Current.Application["1_LastErrorTime"] = DateTime.Now;
+            HttpContext.Current.Application["1_LastErrorMessage"] = _baseerror.Message;
+            HttpContext.Current.Application["1_LastErrorSource"] = _baseerror.Source;
+            HttpContext.Current.Application["1_LastErrorTargetSite"] = _baseerror.TargetSite;
+            HttpContext.Current.Application["1_LastErrorStackTrace"] = _baseerror.StackTrace;
+
+
+            // get the web.config settings for the error email
+            System.Configuration.AppSettingsReader settingsReader = new AppSettingsReader();
+            string _emailRecipient = settingsReader.GetValue("Postinstllationtestemailaddress_to", typeof(String)).ToString();
+            string _emailSender = settingsReader.GetValue("SmtpSenderEmailAddress", typeof(String)).ToString();
+            string _emailSubject = "App Error - " + settingsReader.GetValue("SmtpSenderName", typeof(String)).ToString();
+
+
+            if (Request.ServerVariables["SERVER_NAME"] == "localhost")
+            {
+                //Application["errorEmail"] = _msg.ToString();
+            }
+            else
+            {
+                // itest to see if and error email should be sent.
+
+                if (sendError && isoktoemailbasedonexception)
+                {
+                    //create the email object
+                    NameValueCollection headers = new NameValueCollection();
+                    headers.Add("OPHeader", "op_error");
+
+
+                    MailMessage _message = new MailMessage(_emailSender.Trim(), _emailRecipient.Trim());
+                    _message.Subject = String.Format("{0} : {1} : {2}", _emailSubject.Trim(), DateTime.Now.ToShortTimeString(), Request.ServerVariables["REMOTE_ADDR"].ToString()).Trim();
+                    _message.IsBodyHtml = true;
+                    _message.Body = _msg.ToString().Trim();
+                    _message.IsBodyHtml = true;
+
+                    SmtpClient _client = new SmtpClient();
+
+
+                    _client.Host = (string)settingsReader.GetValue("SmtpHost", typeof(String));
+                    _client.Port = (int)settingsReader.GetValue("SmtpPort", typeof(int));
+
+                    _client.Send(_message);
+
+
+                }
+            }
+        }
+        catch (Exception err)
+        {
+
+        }
+
+    }
+
+
+
+</hgroup>
+
+

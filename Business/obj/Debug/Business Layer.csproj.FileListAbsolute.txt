@@ -1,0 +1,157 @@
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\obj\Debug\Business Layer.csprojResolveAssemblyReference.cache
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\obj\Debug\MyApp.Business.Resource.EmailResource.resources
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\obj\Debug\Business Layer.csproj.GenerateResource.Cache
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Aspose.Cells.lic
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Aspose.Pdf.lic
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Aspose.Words.lic
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\MyApp.Business.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\MyApp.Business.pdb
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Aspose.Cells.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Aspose.Pdf.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Aspose.Words.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\AutoMapper.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\EntityFramework.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Gma.QrCodeNet.Encoding.Net35.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Ionic.Zip.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\log4net.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\OpenPlatform.General.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\OpenPlatform.General.pdb
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\AutoMapper.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\EntityFramework.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Gma.QrCodeNet.Encoding.Net35.pdb
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Gma.QrCodeNet.Encoding.Net35.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\log4net.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\bin\Debug\System.Web.Mvc.xml
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\obj\Debug\MyApp.Business.dll
+C:\Users\Russell\Desktop\Clean\Trunk\src\Solution\Business\obj\Debug\MyApp.Business.pdb
+C:\Users\Russell\Desktop\MVC5\Business\obj\Debug\Business Layer.csprojResolveAssemblyReference.cache
+C:\Users\Russell\Desktop\MVC5\Business\obj\Debug\MyApp.Business.Resource.EmailResource.resources
+C:\Users\Russell\Desktop\MVC5\Business\obj\Debug\Business Layer.csproj.GenerateResource.Cache
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Aspose.Cells.lic
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Aspose.Pdf.lic
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Aspose.Words.lic
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\MyApp.Business.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\MyApp.Business.pdb
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Aspose.Cells.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Aspose.Pdf.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Aspose.Words.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\EntityFramework.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Gma.QrCodeNet.Encoding.Net35.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Ionic.Zip.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.Owin.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\OpenPlatform.General.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Owin.dll
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\OpenPlatform.General.pdb
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\EntityFramework.xml
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Gma.QrCodeNet.Encoding.Net35.pdb
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Gma.QrCodeNet.Encoding.Net35.xml
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.Owin.xml
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Russell\Desktop\MVC5\Business\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Russell\Desktop\MVC5\Business\obj\Debug\MyApp.Business.dll
+C:\Users\Russell\Desktop\MVC5\Business\obj\Debug\MyApp.Business.pdb
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Aspose.Cells.lic
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Aspose.Pdf.lic
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Aspose.Words.lic
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\MyApp.Business.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\MyApp.Business.pdb
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Aspose.Cells.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Aspose.Pdf.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Aspose.Words.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\EntityFramework.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Gma.QrCodeNet.Encoding.Net35.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Ionic.Zip.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.Owin.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\OpenPlatform.General.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Owin.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\OpenPlatform.General.pdb
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\EntityFramework.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Gma.QrCodeNet.Encoding.Net35.pdb
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Gma.QrCodeNet.Encoding.Net35.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.Owin.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\obj\Debug\Business Layer.csprojResolveAssemblyReference.cache
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\obj\Debug\MyApp.Business.Resource.EmailResource.resources
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\obj\Debug\Business Layer.csproj.GenerateResource.Cache
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\obj\Debug\MyApp.Business.dll
+C:\Users\Russell\Desktop\MVC5 - Reviewmysite\MVC5\Business\obj\Debug\MyApp.Business.pdb
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Aspose.Cells.lic
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Aspose.Pdf.lic
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Aspose.Words.lic
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\MyApp.Business.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\MyApp.Business.pdb
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Aspose.Cells.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Aspose.Pdf.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Aspose.Words.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\EntityFramework.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Gma.QrCodeNet.Encoding.Net35.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Ionic.Zip.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\MessagingToolkit.QRCode.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.Owin.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.Owin.Security.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Newtonsoft.Json.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\OpenPlatform.General.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Owin.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\OpenPlatform.General.pdb
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\EntityFramework.xml
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Gma.QrCodeNet.Encoding.Net35.pdb
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Gma.QrCodeNet.Encoding.Net35.xml
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.Owin.xml
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.Owin.Security.xml
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\GitHub\ratemywebsite\ratemywebsite\Business\bin\Debug\Newtonsoft.Json.xml
+C:\GitHub\ratemywebsite\ratemywebsite\Business\obj\Debug\Business Layer.csprojResolveAssemblyReference.cache
+C:\GitHub\ratemywebsite\ratemywebsite\Business\obj\Debug\MyApp.Business.Resource.EmailResource.resources
+C:\GitHub\ratemywebsite\ratemywebsite\Business\obj\Debug\Business Layer.csproj.GenerateResource.Cache
+C:\GitHub\ratemywebsite\ratemywebsite\Business\obj\Debug\MyApp.Business.dll
+C:\GitHub\ratemywebsite\ratemywebsite\Business\obj\Debug\MyApp.Business.pdb
