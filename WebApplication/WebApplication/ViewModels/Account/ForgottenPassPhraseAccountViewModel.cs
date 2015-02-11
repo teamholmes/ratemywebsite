@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Web.Security;
 using MyApp.Business.DomainObjects.Models;
 using System.Web.Mvc;
-using Resources;
+using WebApplication.Resources;
 
 namespace MyApp.Web.ViewModels
 {
@@ -13,12 +13,12 @@ namespace MyApp.Web.ViewModels
     public class ForgottenPassPhraseAccountViewModel : BaseViewModel
     {
 
-        [Required(ErrorMessageResourceName = "requiredfield", ErrorMessageResourceType = typeof(AccountResource))]
+        [Required(ErrorMessageResourceName = "requiredfield", ErrorMessageResourceType = typeof(EVAResource))]
         [StringLength(75)]
-        [Display(Name = "emailaddress", ResourceType = typeof(AccountResource))]
+        [Display(Name = "emailaddress", ResourceType = typeof(EVAResource))]
         public string EmailAddress { get; set; }
 
-        [Required(ErrorMessageResourceName = "requiredfield", ErrorMessageResourceType = typeof(AccountResource))]
+        [Required(ErrorMessageResourceName = "requiredfield", ErrorMessageResourceType = typeof(EVAResource))]
         [Display(Name = "catchacode", ResourceType = typeof(AccountResource))]
         public string Captcha { get; set; }
 

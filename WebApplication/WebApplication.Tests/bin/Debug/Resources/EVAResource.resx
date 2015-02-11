@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="catchacode" xml:space="preserve">
+    <value>Verification code</value>
+  </data>
+  <data name="emailaddress" xml:space="preserve">
+    <value>Email address</value>
+  </data>
+  <data name="InvalidEmailaddress" xml:space="preserve">
+    <value>Invalid email address</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Existing users</value>
+  </data>
+  <data name="Loginbutton" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="passphrase" xml:space="preserve">
+    <value>Passphrase</value>
+  </data>
+  <data name="requiredfield" xml:space="preserve">
+    <value>Required field</value>
+  </data>
+  <data name="WebsiteTitle" xml:space="preserve">
+    <value>Rate MyWebsite</value>
+  </data>
+  <data name="accounthasbeendisabled" xml:space="preserve">
+    <value>The account has been disabled</value>
+  </data>
+  <data name="accounthasbeenlocked" xml:space="preserve">
+    <value>The account has been locked for {0} minutes</value>
+  </data>
+  <data name="Accoutnotvalidated" xml:space="preserve">
+    <value>The account has not been verified</value>
+  </data>
+  <data name="invalidacaptchacode" xml:space="preserve">
+    <value>Incorrect code</value>
+  </data>
+  <data name="logindetailsincorrect" xml:space="preserve">
+    <value>The login details supplied are incorrect</value>
+  </data>
+  <data name="confirmemailaddress" xml:space="preserve">
+    <value>Confirm email address</value>
+  </data>
+  <data name="confirmpassphrase" xml:space="preserve">
+    <value>Confirm passphrase</value>
+  </data>
+  <data name="createanewaccount" xml:space="preserve">
+    <value>If you have not yet created an account with us you can do so now.</value>
+  </data>
+  <data name="createanaccountitle" xml:space="preserve">
+    <value>Register for a new account</value>
+  </data>
+  <data name="CreateAccountSubmitButton" xml:space="preserve">
+    <value>Create account</value>
+  </data>
+  <data name="passphrasetext" xml:space="preserve">
+    <value>Your passphrase must be a minimum of 15 characters</value>
+  </data>
+  <data name="emailalreadyexists" xml:space="preserve">
+    <value>An account already exists for this email address</value>
+  </data>
+  <data name="invalidpassphrasecreation" xml:space="preserve">
+    <value>The passphrase must be a minimum of 15 characters</value>
+  </data>
+  <data name="accountalreadyactivated" xml:space="preserve">
+    <value>This account has already been validated</value>
+  </data>
+  <data name="accountnotvalidated" xml:space="preserve">
+    <value>This account has not yet been validated</value>
+  </data>
+  <data name="Backtohomescreen" xml:space="preserve">
+    <value>Back to login screen</value>
+  </data>
+  <data name="forgotpasswordtitle" xml:space="preserve">
+    <value>Login problems</value>
+  </data>
+  <data name="forgottenpassphraseemaildoesntexists" xml:space="preserve">
+    <value>No account exists for the email address entered</value>
+  </data>
+  <data name="forgottenpassphraseordidntgetemail" xml:space="preserve">
+    <value>If you did not receive your account verification email, have forgotten your password or have issues when trying to login to your account, please enter your email address and select one of the options below:</value>
+  </data>
+  <data name="helpwithaccountproblems" xml:space="preserve">
+    <value>Forgotten your passphrase? - Reset my passphrase</value>
+  </data>
+  <data name="nosuchuser" xml:space="preserve">
+    <value>No such user exists</value>
+  </data>
+  <data name="problemobtainingyouraccount" xml:space="preserve">
+    <value>There was a problem retrieving your account</value>
+  </data>
+  <data name="resendaccountconfirmation" xml:space="preserve">
+    <value>Resend account confirmation</value>
+  </data>
+  <data name="sendmemypassphrase" xml:space="preserve">
+    <value>Reset passphrase</value>
+  </data>
+  <data name="unabletoreset" xml:space="preserve">
+    <value>Unable to reset your passphrase</value>
+  </data>
+  <data name="waitforemailaccountproblems" xml:space="preserve">
+    <value>You pasphrase has been reset and an email has been sent to you. This email contains your new passphrase.</value>
+  </data>
+  <data name="existingpassphrase" xml:space="preserve">
+    <value>Existing / temporary passphrase</value>
+  </data>
+  <data name="confirmnewpassphrase" xml:space="preserve">
+    <value>Confirm new passphrase</value>
+  </data>
+  <data name="Continuetologinarea" xml:space="preserve">
+    <value>Continue to the login area</value>
+  </data>
+  <data name="mydetails" xml:space="preserve">
+    <value>My details</value>
+  </data>
+  <data name="newpassphrase" xml:space="preserve">
+    <value>New passphrase</value>
+  </data>
+  <data name="passphrasefailedtochange" xml:space="preserve">
+    <value>Unable to update your pasphrase</value>
+  </data>
+  <data name="passphrasesuccessfullychanged" xml:space="preserve">
+    <value>Your passphrase has now been changed</value>
+  </data>
+  <data name="theemailaddresseneteredwasnotexpected" xml:space="preserve">
+    <value>The email address you entered was not the email address expected</value>
+  </data>
+  <data name="updatemypassphrase" xml:space="preserve">
+    <value>Update passphrase</value>
+  </data>
+  <data name="updatingyourpassphrasetitle" xml:space="preserve">
+    <value>Changing your passphrase</value>
+  </data>
+  <data name="youmustchangeyourtemporarypassphrase" xml:space="preserve">
+    <value>You must change your temporary passphrase</value>
+  </data>
+  <data name="Yourpassphrasehasexpired" xml:space="preserve">
+    <value>Your passphrase has expired, please generate a new one.</value>
+  </data>
+  <data name="active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="failedtocompleterequest" xml:space="preserve">
+    <value>Failed to complete this request</value>
+  </data>
+  <data name="identifier" xml:space="preserve">
+    <value>Unique identifier</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Systemstatus" xml:space="preserve">
+    <value>System Status</value>
+  </data>
+  <data name="companyname" xml:space="preserve">
+    <value>Company name</value>
+  </data>
+  <data name="engagementzones" xml:space="preserve">
+    <value>Engagement zones</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="NoRecordsExist" xml:space="preserve">
+    <value>No records exist</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="mustdeleteenagegementsfirst" xml:space="preserve">
+    <value>You must delete the engagements first</value>
+  </data>
+  <data name="optionaluniqueidentifer" xml:space="preserve">
+    <value>Unique Code</value>
+  </data>
+  <data name="exceeededmaxunregisteredrequested" xml:space="preserve">
+    <value>You cannot exceed the maximum unregistered QRCodes allowed</value>
+  </data>
+  <data name="generateunregisteredcodes" xml:space="preserve">
+    <value>Allocate unregistered QRCodes</value>
+  </data>
+  <data name="requestedunregisteredcodes" xml:space="preserve">
+    <value>Requested unregistered codes</value>
+  </data>
+  <data name="unabletoprocessrequest" xml:space="preserve">
+    <value>Unable to perform this function at this moment in time</value>
+  </data>
+  <data name="getunregisteredpdf" xml:space="preserve">
+    <value>Download PDF of unregistered QRCodes</value>
+  </data>
+  <data name="groupalreadyexists" xml:space="preserve">
+    <value>Group name already exists</value>
+  </data>
+  <data name="request" xml:space="preserve">
+    <value>Request</value>
+  </data>
+  <data name="action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="dateadded" xml:space="preserve">
+    <value>Date Added</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NoUserName" xml:space="preserve">
+    <value>Anonymous</value>
+  </data>
+  <data name="dontknow" xml:space="preserve">
+    <value>Don't know</value>
+  </data>
+  <data name="tooptiptext" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="generalformerror" xml:space="preserve">
+    <value>There was a problem processing this form. Please correct any issues and try again.</value>
+  </data>
+  <data name="firstname" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="surname" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="telephonenumber" xml:space="preserve">
+    <value>Telephone number</value>
+  </data>
+  <data name="record" xml:space="preserve">
+    <value>Record</value>
+  </data>
+  <data name="exportby" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="filterby" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="pleaseselect" xml:space="preserve">
+    <value>Please select</value>
+  </data>
+  <data name="Nologentryfound" xml:space="preserve">
+    <value>--</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="visitthissection" xml:space="preserve">
+    <value>View this section</value>
+  </data>
+  <data name="Last" xml:space="preserve">
+    <value>Last Section</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next Section</value>
+  </data>
+  <data name="view" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="backtooverview" xml:space="preserve">
+    <value>Back to overview</value>
+  </data>
+  <data name="saveandgotonext" xml:space="preserve">
+    <value>Save and go to next section</value>
+  </data>
+  <data name="saveandgotoprevious" xml:space="preserve">
+    <value>Save and go to previous section</value>
+  </data>
+  <data name="saveandoverview" xml:space="preserve">
+    <value>Save and go to overview</value>
+  </data>
+  <data name="LoginDetailsIncorrectCheckCapsLock" xml:space="preserve">
+    <value>The login details supplied are incorrect. Please ensure you do not have the caps lock on.</value>
+  </data>
+  <data name="mandatorymarker" xml:space="preserve">
+    <value> *</value>
+  </data>
+</root>

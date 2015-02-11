@@ -205,3 +205,9 @@ C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\bin\De
 C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\obj\Debug\WebApplication.Tests.csprojResolveAssemblyReference.cache
 C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\obj\Debug\WebApplication.Tests.dll
 C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\obj\Debug\WebApplication.Tests.pdb
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\bin\Debug\Resources\EVAResource.resx
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\bin\Debug\Resources\GeneralResource.resx
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\bin\Debug\Resources\AccountResource.resx
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\bin\Debug\Resources\AccountResource.Designer.cs
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\bin\Debug\Resources\EVAResource.Designer.cs
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\bin\Debug\Resources\GeneralResource.Designer.cs

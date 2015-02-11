@@ -54,7 +54,7 @@ namespace MyApp.Web.Helpers
                 //div.InnerHtml += button.ToString();
             }
 
-            div.InnerHtml += String.Format("<strong>{0}</strong> - {1}", @Resources.GeneralResource.warning, message );
+            div.InnerHtml += String.Format("<strong>{0}</strong> - {1}", @WebApplication.Resources.GeneralResource.warning, message);
 
             if (errorCount > 1)
             {

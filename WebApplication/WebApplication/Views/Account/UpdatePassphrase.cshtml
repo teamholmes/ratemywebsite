@@ -2,7 +2,7 @@
 
 
 @{
-    ViewBag.Title = @MyApp.Web.Resources.EVAResource.WebsiteTitle;
+    ViewBag.Title = @WebApplication.Resources.EVAResource.WebsiteTitle;
 
 }
 
@@ -12,9 +12,9 @@
 {
     <h1>Success</h1>
     
-    <p class="summary">@MyApp.Web.Resources.EVAResource.passphrasesuccessfullychanged</p>
+    <p class="summary">@WebApplication.Resources.EVAResource.passphrasesuccessfullychanged</p>
    
-    @Html.ActionLink(@MyApp.Web.Resources.EVAResource.Backtohomescreen, "Login", "Account", null)
+    @Html.ActionLink(@WebApplication.Resources.EVAResource.Backtohomescreen, "Login", "Account", null)
 
 }
 else
@@ -38,11 +38,11 @@ else
                     <p class="notification">
                         @if (Model.ReasonEnum == MyApp.Business.DomainObjects.Models.BusinessEnum.AuthenticationResult.TempPasswordIssued)
                         {
-                            @MyApp.Web.Resources.EVAResource.youmustchangeyourtemporarypassphrase
+                            @WebApplication.Resources.EVAResource.youmustchangeyourtemporarypassphrase
                         }
                         else
                         {
-                            @MyApp.Web.Resources.EVAResource.Yourpassphrasehasexpired
+                            @WebApplication.Resources.EVAResource.Yourpassphrasehasexpired
                         }
                     </p>
 
@@ -101,7 +101,7 @@ else
                         <div class="form-group">
                             <label class="col-md-4"></label>
                             <div class="col-md-8">
-                                @Html.SubmitButton(@MyApp.Web.Resources.EVAResource.updatemypassphrase)
+                                @Html.SubmitButton(@WebApplication.Resources.EVAResource.updatemypassphrase)
                                 @Html.HiddenFor(x => x.P1)
                                 @Html.HiddenFor(x => x.P2)
                                 @Html.HiddenFor(x => x.ReasonEnum)

@@ -17,7 +17,7 @@ using MyApp.Web.Controllers;
 using System.Threading;
 using MyApp.DAL.Repository;
 using Thinktecture.IdentityModel.Authorization.Mvc;
-using Resources;
+using WebApplication.Resources;
 
 namespace WebApplication.Controllers
 {
@@ -360,7 +360,7 @@ namespace WebApplication.Controllers
                 if (_AccountService.DoesAccountExistByEmailAddress(viewmodel.EmailAddress, null))
                 {
                     // user wants to get their passphrase emailed
-                    if (submitbutton == @EVAResource.sendmemypassphrase)
+                    if (submitbutton == @WebApplication.Resources.EVAResource.sendmemypassphrase)
                     {
                         BusinessEnum.PassphraseReset result = _AccountService.EmailTemporaryPassPhrase(viewmodel.EmailAddress, GetBaseURL());
 
@@ -370,40 +370,40 @@ namespace WebApplication.Controllers
                         }
                         else if (result == BusinessEnum.PassphraseReset.NoSuchUser)
                         {
-                            ModelState.AddModelError("EmailAddress", EVAResource.nosuchuser);
+                            ModelState.AddModelError("EmailAddress", WebApplication.Resources.EVAResource.nosuchuser);
                         }
                         else if (result == BusinessEnum.PassphraseReset.Accountnotvalidated)
                         {
-                            ModelState.AddModelError("EmailAddress", EVAResource.accountnotvalidated);
+                            ModelState.AddModelError("EmailAddress", WebApplication.Resources.EVAResource.accountnotvalidated);
                         }
                         else
                         {
-                            ModelState.AddModelError("EmailAddress", EVAResource.unabletoreset);
+                            ModelState.AddModelError("EmailAddress", WebApplication.Resources.EVAResource.unabletoreset);
                         }
                     }
-                    else if (submitbutton == @EVAResource.resendaccountconfirmation)
+                    else if (submitbutton == @WebApplication.Resources.EVAResource.resendaccountconfirmation)
                     {
                         // determine the account
                         BusinessEnum.ResendAccountSignupEmails result = _AccountService.SendAccountConfirmationEmailBasedOnEmailAddress(viewmodel.EmailAddress, GetBaseURL());
 
                         if (result == BusinessEnum.ResendAccountSignupEmails.Accountalreadyvalidated)
                         {
-                            ModelState.AddModelError("EmailAddress", EVAResource.accountalreadyactivated);
+                            ModelState.AddModelError("EmailAddress", WebApplication.Resources.EVAResource.accountalreadyactivated);
                         }
                         else if (result == BusinessEnum.ResendAccountSignupEmails.Fail)
                         {
-                            ModelState.AddModelError("EmailAddress", EVAResource.problemobtainingyouraccount);
+                            ModelState.AddModelError("EmailAddress", WebApplication.Resources.EVAResource.problemobtainingyouraccount);
                         }
                         else
                         {
 
-                            viewmodel.Feedbackmessage = EVAResource.waitforemailaccountproblems;
+                            viewmodel.Feedbackmessage = WebApplication.Resources.EVAResource.waitforemailaccountproblems;
                         }
                     }
                 }
                 else
                 {
-                    ModelState.AddModelError("EmailAddress", EVAResource.forgottenpassphraseemaildoesntexists);
+                    ModelState.AddModelError("EmailAddress", WebApplication.Resources.EVAResource.forgottenpassphraseemaildoesntexists);
                 }
 
             }

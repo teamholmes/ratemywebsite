@@ -1,4 +1,4 @@
-﻿using Resources;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +18,7 @@ namespace MyApp.Web.Helpers
 
         public static IHtmlString SubmitButton(this HtmlHelper helper)
         {
-            return helper.Raw(String.Format("<input type=\"submit\" class=\"btn btn-primary\" id=\"SubmitButton\" value=\"{0}\" name=\"submitbutton\" />", @Resources.GeneralResource.submit));
+            return helper.Raw(String.Format("<input type=\"submit\" class=\"btn btn-primary\" id=\"SubmitButton\" value=\"{0}\" name=\"submitbutton\" />", "Submit"));
 
         }
         /// <summary>
@@ -32,7 +32,7 @@ namespace MyApp.Web.Helpers
             // set the default text programatically
             if (String.IsNullOrEmpty(displaytext))
             {
-                displaytext = @GeneralResource.submit;
+                displaytext = @WebApplication.Resources.GeneralResource.submit;
             }
 
             string disabledtextclass = string.Empty;
@@ -49,7 +49,7 @@ namespace MyApp.Web.Helpers
 
             if (String.IsNullOrEmpty(displaytext))
             {
-                displaytext = @GeneralResource.submit;
+                displaytext = @WebApplication.Resources.GeneralResource.submit;
             }
 
             if (String.IsNullOrEmpty(Id))
@@ -66,7 +66,7 @@ namespace MyApp.Web.Helpers
 
             if (String.IsNullOrEmpty(displaytext))
             {
-                displaytext = @GeneralResource.submit;
+                displaytext = @WebApplication.Resources.GeneralResource.submit;
             }
 
             if (String.IsNullOrEmpty(Id))
@@ -87,7 +87,7 @@ namespace MyApp.Web.Helpers
         {
             if (String.IsNullOrEmpty(displaytext))
             {
-                displaytext = @GeneralResource.submit;
+                displaytext = @WebApplication.Resources.GeneralResource.submit;
             }
 
             if (String.IsNullOrEmpty(Id))
@@ -114,7 +114,7 @@ namespace MyApp.Web.Helpers
             // set the default text programatically
             if (String.IsNullOrEmpty(displaytext))
             {
-                displaytext = @GeneralResource.submit;
+                displaytext = @WebApplication.Resources.GeneralResource.submit;
             }
 
             string disabledtextclass = string.Empty;

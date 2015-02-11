@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Web.Security;
 using MyApp.Business.DomainObjects.Models;
 using System.Web.Mvc;
-using Resources;
+using WebApplication.Resources;
 
 namespace MyApp.Web.ViewModels
 {

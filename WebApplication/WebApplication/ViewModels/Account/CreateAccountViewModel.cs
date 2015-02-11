@@ -6,7 +6,7 @@ using System.Web.Security;
 using MyApp.Business.DomainObjects.Models;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
-using Resources;
+using WebApplication.Resources;
 
 namespace MyApp.Web.ViewModels
 {

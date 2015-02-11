@@ -1,4 +1,5 @@
-﻿
+﻿@using OP.General.Extensions;
+@using MyApp.Web.Helpers;
 @model MyApp.Web.ViewModels.CreateAccountViewModel
 
 @{
@@ -77,7 +78,7 @@
 
                         <div class="col-md-8">
                             @Html.PasswordFor(m => m.Passphrasepart1, new { MaxLength = "75", @class = "form-control disablecopypaste" })
-                            <span class="help-block">@MyApp.Web.Resources.EVAResource.passphrasetext</span>
+                            <span class="help-block">@WebApplication.Resources.EVAResource.passphrasetext</span>
                             @Html.ValidationMessageFor(m => m.Passphrasepart1)
                         </div>
                     </div>
@@ -113,7 +114,7 @@
                         <label class="col-md-4"></label>
 
                         <div class="col-md-8">
-                            @Html.SubmitButton(@MyApp.Web.Resources.EVAResource.CreateAccountSubmitButton)
+                            @Html.SubmitButton(@WebApplication.Resources.EVAResource.CreateAccountSubmitButton)
                         </div>
 
                     </div>

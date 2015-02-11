@@ -238,3 +238,13 @@ C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\bin\Microsof
 C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
 C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\obj\Debug\WebApplication.dll
 C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\obj\Debug\WebApplication.pdb
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\bin\Resources\EVAResource.resx
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\bin\Resources\GeneralResource.resx
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\bin\Resources\AccountResource.resx
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\bin\Resources\AccountResource.Designer.cs
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\bin\Resources\EVAResource.Designer.cs
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\bin\Resources\GeneralResource.Designer.cs
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\obj\Debug\WebApplication.Resources.AccountResource.resources
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\obj\Debug\WebApplication.csproj.GenerateResource.Cache
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\obj\Debug\WebApplication.Resources.EVAResource.resources
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\obj\Debug\WebApplication.Resources.GeneralResource.resources

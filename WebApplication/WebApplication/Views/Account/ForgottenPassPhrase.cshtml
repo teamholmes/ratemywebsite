@@ -1,7 +1,7 @@
 ﻿@model MyApp.Web.ViewModels.ForgottenPassPhraseAccountViewModel
 
 @{
-    ViewBag.Title = @MyApp.Web.Resources.EVAResource.WebsiteTitle;
+    ViewBag.Title = @WebApplication.Resources.EVAResource.WebsiteTitle;
 
 }
 
@@ -16,7 +16,7 @@
 }
 else
 {
-    <h1>@MyApp.Web.Resources.EVAResource.forgotpasswordtitle</h1>
+    <h1>@WebApplication.Resources.EVAResource.forgotpasswordtitle</h1>
     
     <div class="row clearfix">
         <div class="col-md-6">
@@ -36,7 +36,7 @@ else
 
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label">@MyApp.Web.Resources.EVAResource.emailaddress</label>
+                            <label class="col-md-4 control-label">@WebApplication.Resources.EVAResource.emailaddress</label>
 
                             <div class="col-md-8">
                                 @Html.TextBoxFor(m => m.EmailAddress, new { MaxLength = "100", @class = "form-control disablecopypaste", type = "email" })
@@ -45,7 +45,7 @@ else
                         </div>
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label">@MyApp.Web.Resources.EVAResource.catchacode</label>
+                            <label class="col-md-4 control-label">@WebApplication.Resources.EVAResource.catchacode</label>
 
                             <div class="col-md-3">
                                 @Html.TextBoxFor(m => m.Captcha, new { MaxLength = "7", @class = "form-control", autocomplete = "off", autocapitalize = "off" })
@@ -62,7 +62,7 @@ else
                             <label class="col-md-4"></label>
 
                             <div class="col-md-8">
-                                @Html.SubmitButton(@MyApp.Web.Resources.EVAResource.sendmemypassphrase)
+                                @Html.SubmitButton(@WebApplication.Resources.EVAResource.sendmemypassphrase)
                             </div>
 
                         </div>

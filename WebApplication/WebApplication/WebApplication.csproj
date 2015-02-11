@@ -190,20 +190,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_GlobalResources\GeneralResource.designer.cs">
-      <DependentUpon>GeneralResource.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="App_GlobalResources\AccountResource.designer.cs">
+    <Compile Include="Resources\AccountResource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AccountResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\EVAResource.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EVAResource.resx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -222,6 +213,18 @@
     </Compile>
     <Compile Include="Helpers\ButtonExtensions.cs" />
     <Compile Include="Helpers\ValidationSummaryBootstrap.cs" />
+    <Compile Include="Resources\EVAResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EVAResource.resx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Resources\GeneralResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneralResource.resx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="ViewModels\Account\AccountViewModels.cs" />
     <Compile Include="ViewModels\AuthorizationManager.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
@@ -316,24 +319,27 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_GlobalResources\EVAResource.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EVAResource.designer.cs</LastGenOutput>
-    </Content>
+    <EmbeddedResource Include="Resources\EVAResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EVAResource.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_GlobalResources\AccountResource.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>AccountResource.designer.cs</LastGenOutput>
+    <EmbeddedResource Include="Resources\AccountResource.resx">
       <SubType>Designer</SubType>
-    </Content>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AccountResource.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_GlobalResources\GeneralResource.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>GeneralResource.designer.cs</LastGenOutput>
+    <EmbeddedResource Include="Resources\GeneralResource.resx">
       <SubType>Designer</SubType>
-    </Content>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GeneralResource.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

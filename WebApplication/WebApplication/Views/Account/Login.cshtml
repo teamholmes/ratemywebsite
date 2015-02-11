@@ -3,7 +3,7 @@
 @using MyApp.Web.Helpers;
 
 @{
-    ViewBag.Title = @MyApp.Web.Resources.EVAResource.WebsiteTitle;
+    ViewBag.Title = @WebApplication.Resources.EVAResource.WebsiteTitle;
 }
 
 <h2>Let's get started</h2>
@@ -11,13 +11,10 @@
 <div class="row clearfix">
     <div class="col-md-6">
         <p>
-          xxxxxxxxxxxxx
+            xxxxxxxxxxxxx
         </p>
 
-
-
-
-        <p class="">@Html.ActionLink(@EVAResource.createanewaccount, "CreateAccount", null, new { @class = "ifs-link-btn" })</p>
+        <p class="">@Html.ActionLink(@WebApplication.Resources.EVAResource.createanewaccount, "CreateAccount", null, new { @class = "ifs-link-btn" })</p>
 
     </div>
 
@@ -30,7 +27,7 @@
                 <div class="panel-body">
 
                     <div class="form-group">
-                        <label class="col-md-4 control-label">@MyApp.Web.Resources.EVAResource.emailaddress</label>
+                        <label class="col-md-4 control-label">@WebApplication.Resources.EVAResource.emailaddress</label>
 
                         <div class="col-md-8">
                             @Html.TextBoxFor(m => m.EmailAddress, new { MaxLength = "100", @class = "form-control", type = "email", autocapitalize = "off" })
@@ -66,15 +63,15 @@
                         <label class="col-md-4"></label>
 
                         <div class="col-md-8">
-                            @Html.SubmitButton(@MyApp.Web.Resources.EVAResource.submit)
+                            @Html.SubmitButton(@WebApplication.Resources.EVAResource.submit)
                         </div>
 
                     </div>
-                    <p class="linebreaktop">@Html.ActionLink(@MyApp.Web.Resources.EVAResource.createanewaccount, "CreateAccount", null, new { @class = "ifs-link-btn" })</p>
+                    <p class="linebreaktop">@Html.ActionLink(@WebApplication.Resources.EVAResource.createanewaccount, "CreateAccount", null, new { @class = "ifs-link-btn" })</p>
 
-                    <p>@Html.ActionLink(@MyApp.Web.Resources.EVAResource.helpwithaccountproblems, "ForgottenPassPhrase", null, new { @class = "ifs-link-btn" })</p>
+                    <p>@Html.ActionLink(@WebApplication.Resources.EVAResource.helpwithaccountproblems, "ForgottenPassPhrase", null, new { @class = "ifs-link-btn" })</p>
 
-                   
+
 
                 </div>
 
@@ -82,20 +79,5 @@
             </div>
 
         </div>
-        
-       
+
     }
-    @*<div class="col-md-12">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-            <p>
-                N.B. The information gathered through the online application tool will be used throughout your auto<br />
-                enrolment setup.
-            </p>
-        </div>
-        <div class="col-md-2"></div>
-
-
-    </div>*@
-</div>
-

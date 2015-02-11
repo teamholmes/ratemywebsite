@@ -10,7 +10,7 @@ using OP.General.Extensions;
 using System.Security.Claims;
 using System.Threading;
 using Microsoft.AspNet.Identity;
-using Resources;
+using WebApplication.Resources;
 
 namespace MyApp.Web.Controllers
 {

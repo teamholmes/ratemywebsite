@@ -205,7 +205,7 @@
     <value>Confirm new passphrase</value>
   </data>
   <data name="confirmpassphrase" xml:space="preserve">
-    <value>Confirm passphrase</value>
+    <value>Confirm passphrase </value>
   </data>
   <data name="GID" xml:space="preserve">
     <value>GID</value>
