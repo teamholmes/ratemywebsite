@@ -6,79 +6,82 @@
     ViewBag.Title = @WebApplication.Resources.EVAResource.WebsiteTitle;
 }
 <script src="~/Scripts/angular/app.js"></script>
-<h2 ng-app="reviewmywebsite" ng-controller="loginController">Let's get started</h2>
+<div id="angularcontainer" ng-app="reviewmywebsite" ng-controller="loginController">
+    <h2>Let's get started</h2>
 
-<div class="row clearfix">
-    <div class="col-md-6">
-        <p>
-            {{loadingText}}
-            {{nameer}}
-        </p>
-
-        <p class="">@Html.ActionLink(@WebApplication.Resources.EVAResource.createanewaccount, "CreateAccount", null, new { @class = "ifs-link-btn" })</p>
-
-    </div>
-
-    @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
-    {
-        @Html.AntiForgeryToken()
+    <div class="row clearfix">
         <div class="col-md-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">Login</div>
-                <div class="panel-body">
+            <p>
+                {{loadingText}}
+            </p>
 
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">@WebApplication.Resources.EVAResource.emailaddress</label>
+            <p class="">@Html.ActionLink(@WebApplication.Resources.EVAResource.createanewaccount, "CreateAccount", null, new { @class = "ifs-link-btn" })</p>
 
-                        <div class="col-md-8">
-                            @Html.TextBoxFor(m => m.EmailAddress, new { MaxLength = "100", @class = "form-control", type = "email", autocapitalize = "off" })
-                            @Html.ValidationMessageFor(m => m.EmailAddress)
+        </div>
+
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="col-md-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Login</div>
+                    <div class="panel-body">
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">@WebApplication.Resources.EVAResource.emailaddress</label>
+
+                            <div class="col-md-8">
+                                @Html.TextBoxFor(m => m.EmailAddress, new { MaxLength = "100", @class = "form-control", type = "email", autocapitalize = "off" })
+                                @Html.ValidationMessageFor(m => m.EmailAddress)
+                            </div>
                         </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Passphrase</label>
+
+                            <div class="col-md-8">
+                                @Html.PasswordFor(m => m.Passphrase, new { MaxLength = "100", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Passphrase)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Verification code</label>
+
+                            <div class="col-md-3">
+                                @Html.TextBoxFor(m => m.Captcha, new { MaxLength = "7", @class = "form-control", autocomplete = "off", autocapitalize = "off" })
+                                @Html.ValidationMessageFor(m => m.Captcha)
+                                @Html.HiddenFor(x => x.EncryptedCaptcha)
+                            </div>
+
+                            <div class="col-md-5">
+                                <img src="/Account/GetCaptchaImage?enid=@Model.EncryptedCaptcha&cachecode=@DateTime.Now.Ticks&rnd=@Model.RandomInt" class="captchimage" />
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4"></label>
+
+                            <div class="col-md-8">
+                                @Html.SubmitButton(@WebApplication.Resources.EVAResource.submit)
+                            </div>
+
+                        </div>
+                        <p class="linebreaktop">@Html.ActionLink(@WebApplication.Resources.EVAResource.createanewaccount, "CreateAccount", null, new { @class = "ifs-link-btn" })</p>
+
+                        <p>@Html.ActionLink(@WebApplication.Resources.EVAResource.helpwithaccountproblems, "ForgottenPassPhrase", null, new { @class = "ifs-link-btn" })</p>
+
+
+
                     </div>
-
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Passphrase</label>
-
-                        <div class="col-md-8">
-                            @Html.PasswordFor(m => m.Passphrase, new { MaxLength = "100", @class = "form-control" })
-                            @Html.ValidationMessageFor(m => m.Passphrase)
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">Verification code</label>
-
-                        <div class="col-md-3">
-                            @Html.TextBoxFor(m => m.Captcha, new { MaxLength = "7", @class = "form-control", autocomplete = "off", autocapitalize = "off" })
-                            @Html.ValidationMessageFor(m => m.Captcha)
-                            @Html.HiddenFor(x => x.EncryptedCaptcha)
-                        </div>
-
-                        <div class="col-md-5">
-                            <img src="/Account/GetCaptchaImage?enid=@Model.EncryptedCaptcha&cachecode=@DateTime.Now.Ticks&rnd=@Model.RandomInt" class="captchimage" />
-
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="col-md-4"></label>
-
-                        <div class="col-md-8">
-                            @Html.SubmitButton(@WebApplication.Resources.EVAResource.submit)
-                        </div>
-
-                    </div>
-                    <p class="linebreaktop">@Html.ActionLink(@WebApplication.Resources.EVAResource.createanewaccount, "CreateAccount", null, new { @class = "ifs-link-btn" })</p>
-
-                    <p>@Html.ActionLink(@WebApplication.Resources.EVAResource.helpwithaccountproblems, "ForgottenPassPhrase", null, new { @class = "ifs-link-btn" })</p>
-
 
 
                 </div>
 
-
             </div>
 
-        </div>
- 
-    }
+        }
+
+
+    </div>
