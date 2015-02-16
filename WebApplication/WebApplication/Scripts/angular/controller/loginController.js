@@ -25,7 +25,7 @@ appModule.controller('loginController', ['$scope', '$http', function ($scope, $h
         $scope.statusText = "Please wait while the data loads..."
             $scope.isLoading = true;
             $scope.reviewWebsites = {};
-        $http.get('/api/public', {
+        $http.get('/api/public/', {
                 params: {  }
 
             })

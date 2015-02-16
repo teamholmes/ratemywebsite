@@ -10,9 +10,13 @@
     <h2>Let's get started</h2>
 
     <div class="row clearfix">
-        <p>{{statusText}}</p>
+        <div id="filterquery" ng-show="reviewWebsites.length > 0">
+            Filteron : <input type="text" ng-model="filterquery" />
+        </div>
         <div class="col-md-6">
             <div websitelist></div>
+
+            <p>{{statusText}}</p>
            
             
         </div>
