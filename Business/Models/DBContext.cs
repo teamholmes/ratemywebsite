@@ -88,6 +88,8 @@ namespace MyApp.DAL.Repository
             //modelBuilder.Configurations.Add(new PassphraseHistoryMap());
             //modelBuilder.Configurations.Add(new PassphraseWordMap());
             modelBuilder.Configurations.Add(new ApplicationUserClaimMap());
+            modelBuilder.Configurations.Add(new WebsiteReviewMap());
+            
 
 
 

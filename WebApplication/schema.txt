@@ -205,3 +205,18 @@ ON DELETE CASCADE
 GO
 ALTER TABLE [dbo].[AspNetUserRoles] CHECK CONSTRAINT [FK_dbo.AspNetUserRoles_dbo.AspNetUsers_UserId]
 GO
+
+
+-- WEBSITE REVIEW TABLE
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[WebsiteReview](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](255) NOT NULL,
+	[URL] [nvarchar](255) NOT NULL
+) ON [PRIMARY]
+
+GO

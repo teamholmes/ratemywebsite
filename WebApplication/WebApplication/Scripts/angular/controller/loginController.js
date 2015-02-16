@@ -8,18 +8,21 @@ appModule.controller('loginController', ['$scope', '$http', function ($scope, $h
 
     $scope.init = function () {
 
-        $scope.loadingText = connectionWelcomeText;
+        $scope.statusText = connectionWelcomeText;
 
-        $scope.loadingtext = "";
+        $scope.statusText = "";
         $scope.isLoading = false;
         $scope.loadJson();
 
     };
 
 
+    $scope.selectItem = function (item) {
+        $scope.statusText = item.Name;
+    };
+
     $scope.loadJson = function () {
-        alert("loading");
-            $scope.loadingtext = "Please wait while the data loads..."
+        $scope.statusText = "Please wait while the data loads..."
             $scope.isLoading = true;
             $scope.reviewWebsites = {};
         $http.get('/api/public', {
@@ -29,10 +32,10 @@ appModule.controller('loginController', ['$scope', '$http', function ($scope, $h
                 .success(function (data, status, headers, config) {
                 $scope.reviewWebsites = data;
                 $scope.isLoading = false;
-                $scope.loadingtext = "";
+                $scope.statusText = "";
                 })
                 .error(function (data, status, headers, config) {
-                $scope.loadingtext = errorrTextDefault + " " + status + " " + data;
+                    $scope.statusText = errorrTextDefault + " " + status + " " + data;
                 $scope.isLoading = false;
             });
         };
