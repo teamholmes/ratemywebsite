@@ -15,8 +15,10 @@
                 {{loadingText}}
             </p>
 
-            <p class="">@Html.ActionLink(@WebApplication.Resources.EVAResource.createanewaccount, "CreateAccount", null, new { @class = "ifs-link-btn" })</p>
 
+            <div websitelist></div>
+           
+            
         </div>
 
         @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
