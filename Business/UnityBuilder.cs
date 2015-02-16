@@ -31,6 +31,8 @@ namespace MyApp.Business.Services
 
             container.RegisterType<IAdminService, AdminService>();
 
+            container.RegisterType<IWebsiteReviewService, WebsiteReviewService>();
+
 
 
         }

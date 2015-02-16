@@ -30,6 +30,7 @@ namespace WebApplication.Controllers
         private ICaptchaService _CaptchaService;
         private IEmailService _EmailService;
         private ILog _Log;
+        private IWebsiteReviewService _WebsiteReviewService;
 
         private IAuthenticationManager AuthenticationManager
         {
@@ -39,7 +40,7 @@ namespace WebApplication.Controllers
             }
         }
 
-        public AccountController(IAccountService accountService, IConfiguration configuration, ICaptchaService captchaservice, IEmailService emailservice, ILog log) //UserManager<ApplicationUser> userManager, 
+        public AccountController(IAccountService accountService, IConfiguration configuration, ICaptchaService captchaservice, IEmailService emailservice, ILog log, IWebsiteReviewService websitereview) //UserManager<ApplicationUser> userManager, 
         {
             //UserManager = userManager;
             _AccountService = accountService;
@@ -47,6 +48,7 @@ namespace WebApplication.Controllers
             _CaptchaService = captchaservice;
             _EmailService = emailservice;
             _Log = log;
+            _WebsiteReviewService = websitereview;
         }
 
 
@@ -107,6 +109,8 @@ namespace WebApplication.Controllers
 
             LoginViewModel viewmodel = new LoginViewModel();
             viewmodel.EncryptedCaptcha = captchacodeused.Encrypt();
+
+            _WebsiteReviewService.GetAll(100);
 
 
             return View(viewmodel);

@@ -25,6 +25,7 @@ namespace WebApplication
 
         protected void Application_Start()
         {
+
             AreaRegistration.RegisterAllAreas();
             UnityConfig.RegisterComponents();  
             GlobalConfiguration.Configure(WebApiConfig.Register);

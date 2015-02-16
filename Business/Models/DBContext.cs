@@ -72,6 +72,8 @@ namespace MyApp.DAL.Repository
         //public DbSet<PassphraseHistory> PassphraseHistorys { get; set; }
         //public DbSet<PassphraseWord> PassphraseWords { get; set; }
         public DbSet<ApplicationUserClaim> ApplicationUserClaims { get; set; }
+        public DbSet<WebsiteReview> WebsiteReviews { get; set; }
+        public DbSet<WebsiteReviewDetail> WebsiteReviewDetails { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -89,32 +91,9 @@ namespace MyApp.DAL.Repository
             //modelBuilder.Configurations.Add(new PassphraseWordMap());
             modelBuilder.Configurations.Add(new ApplicationUserClaimMap());
             modelBuilder.Configurations.Add(new WebsiteReviewMap());
+            modelBuilder.Configurations.Add(new WebsiteReviewDetailMap());
             
-
-
-
             modelBuilder.Entity<ApplicationUserClaim>().HasRequired(t => t.ApplicationUser).WithMany(u => u.Claims).HasForeignKey(t => t.UserId);
-
-
-
-            //modelBuilder.Entity<ApplicationUser>().HasRequired(t => t.Claims).WithMany(u => u).HasForeignKey(t => t.UserId);
-
-
-            //modelBuilder.Entity<ApplicationUser>()
-            //   .HasRequired(a => a.Id)
-            //   .WithMany()
-            //   .HasForeignKey(u => u.Claimz);
-
-
-            // modelBuilder.Entity<IdentityRole>().HasKey<string>(r => r.Id).ToTable("AspNetRoles");
-
-            // modelBuilder.Entity<ApplicationUser>().ToTable("AspNetUsers");
-
-            // modelBuilder.Entity<IdentityUserLogin>().HasKey<string>(l => l.UserId).ToTable("AspNetUserLogins");
-
-            // modelBuilder.Entity<IdentityUserRole>().HasKey(r => new { r.RoleId, r.UserId }).ToTable("AspNetUserRoles");
-
-            // modelBuilder.Entity<IdentityUserClaim>().ToTable("AspNetUserClaims");
 
 
 

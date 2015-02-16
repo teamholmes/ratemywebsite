@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MyApp.Business.DomainObjects.Models;
+using MyApp.Business.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -8,39 +10,33 @@ using System.Web.Http;
 namespace WebApplication.Controllers
 {
 
-   
-
-
-   
-
 
     public class PublicController : ApiController
     {
+
+       private IAccountService _AccountService;
+        private IAdminService _AdminService;
+        private IConfiguration _Configuration;
+        private IWebsiteReviewService _WebsiteReviewService;
+
+
+        public PublicController(IAccountService accountService, IAdminService adminService, IConfiguration configuration, IWebsiteReviewService webreviewservice)
+        {
+            _AccountService = accountService;
+            _AdminService = adminService;
+            _Configuration = configuration;
+            _WebsiteReviewService = webreviewservice;
+
+        }
+
+
         // GET api/public
         public List<WebsiteReview> Get()
         {
-            List<WebsiteReview> reviewWebsites = new List<WebsiteReview>();
-            reviewWebsites.Add(
-                new WebsiteReview()
-                {
-                    Id = 1,
-                    Name = "My special website",
-                    URL = "www.google.com"
+            string g = "41";
 
-                });
-
-
-            reviewWebsites.Add(
-               new WebsiteReview()
-               {
-                   Id = 2,
-                   Name = "My special website2",
-                   URL = "www.google.com2"
-
-               });
-
-            return reviewWebsites;
-
+  
+            return _WebsiteReviewService.GetAll(128);
         }
 
         // GET api/public/5

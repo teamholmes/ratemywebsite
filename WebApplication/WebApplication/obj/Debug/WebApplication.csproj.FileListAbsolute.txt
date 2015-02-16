@@ -248,3 +248,4 @@ C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\obj\Debug\We
 C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\obj\Debug\WebApplication.csproj.GenerateResource.Cache
 C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\obj\Debug\WebApplication.Resources.EVAResource.resources
 C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\obj\Debug\WebApplication.Resources.GeneralResource.resources
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication\bin\Unity.WebApi.dll

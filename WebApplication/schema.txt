@@ -207,7 +207,7 @@ ALTER TABLE [dbo].[AspNetUserRoles] CHECK CONSTRAINT [FK_dbo.AspNetUserRoles_dbo
 GO
 
 
--- WEBSITE REVIEW TABLE
+/****** Object:  Table [dbo].[WebsiteReview]    Script Date: 16/02/2015 13:53:31 ******/
 
 SET ANSI_NULLS ON
 GO
@@ -220,3 +220,21 @@ CREATE TABLE [dbo].[WebsiteReview](
 ) ON [PRIMARY]
 
 GO
+
+
+/****** Object:  Table [dbo].[WebsiteReviewDetail]    Script Date: 16/02/2015 13:53:31 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[WebsiteReviewDetail](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[WebsiteReviewId] [int] NOT NULL,
+	[DesignRating] [int] NULL,
+	[FunctionalityRating] [int] NULL,
+	[ContentRating] [int] NULL,
+	[Comment] [nvarchar](max) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+

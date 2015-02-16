@@ -7,8 +7,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Http;
 using System.Web.Mvc;
 using Unity.Mvc5;
+
 
 namespace WebApplication
 {
@@ -18,6 +20,9 @@ namespace WebApplication
         {
             var container = BuildUnityContainer();
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
+
+            GlobalConfiguration.Configuration.DependencyResolver = new Unity.WebApi.UnityDependencyResolver(container); 
+
             return container;
         }
         private static IUnityContainer BuildUnityContainer()
@@ -36,6 +41,7 @@ namespace WebApplication
             container.RegisterType<ICaptchaService, CaptchaService>();
             container.RegisterType<ISwearWordService, SwearWordService>();
             container.RegisterType<IAdminService, AdminService>();
+            container.RegisterType<IWebsiteReviewService, WebsiteReviewService>();
 
 
             RegisterTypes(container);

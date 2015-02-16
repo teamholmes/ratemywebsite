@@ -133,6 +133,9 @@
     <Reference Include="Unity.Mvc5">
       <HintPath>..\packages\Unity.Mvc5.1.1\lib\net45\Unity.Mvc5.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.WebApi">
+      <HintPath>..\packages\Unity.WebAPI.5.1\lib\net45\Unity.WebApi.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>

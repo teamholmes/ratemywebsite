@@ -121,6 +121,7 @@
   <ItemGroup>
     <Compile Include="Exceptions\UserAlreadyExistsException.cs" />
     <Compile Include="Exceptions\UserDoesNotExistsException.cs" />
+    <Compile Include="Interfaces\IWebsiteReviewService.cs" />
     <Compile Include="Interfaces\ISwearWordService.cs" />
     <Compile Include="Interfaces\IAdminService.cs" />
     <Compile Include="Interfaces\ICaptchaService.cs" />
@@ -139,6 +140,7 @@
     <Compile Include="Models\DomainMapping\ApplicationUserMap.cs" />
     <Compile Include="Models\DomainMapping\ApplicationUserLoginMap.cs" />
     <Compile Include="Models\DomainMapping\MembershipMap.cs" />
+    <Compile Include="Models\DomainMapping\WebsiteReviewDetailMap.cs" />
     <Compile Include="Models\DomainMapping\WebsiteReviewMap.cs" />
     <Compile Include="Models\DomainMapping\SwearWordMap.cs" />
     <Compile Include="Models\DomainMapping\UserInRoleMap.cs" />
@@ -167,6 +169,7 @@
     <Compile Include="Models\DomainMapping\UserProfileMap.cs" />
     <Compile Include="Models\Domain\UserProfile.cs" />
     <Compile Include="Models\Domain\ApplicationUser.cs" />
+    <Compile Include="Models\Services\WebsiteReviewService.cs" />
     <Compile Include="Models\Services\AccountService.cs" />
     <Compile Include="Models\Services\AdminService.cs" />
     <Compile Include="Models\Services\AppConfigurationService.cs" />
