@@ -7,5 +7,6 @@ namespace MyApp.Business.Services
     {
 
         List<WebsiteReview> GetAll(int? maxrows);
+        string Add(WebsiteReview review);
     }
 }

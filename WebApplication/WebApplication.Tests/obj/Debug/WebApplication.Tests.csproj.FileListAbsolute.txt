@@ -211,3 +211,4 @@ C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\bin\De
 C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\bin\Debug\Resources\AccountResource.Designer.cs
 C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\bin\Debug\Resources\EVAResource.Designer.cs
 C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\bin\Debug\Resources\GeneralResource.Designer.cs
+C:\GitHub\ratemywebsite\ratemywebsite\WebApplication\WebApplication.Tests\bin\Debug\Unity.WebApi.dll

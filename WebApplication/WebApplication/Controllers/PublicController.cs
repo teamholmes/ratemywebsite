@@ -6,15 +6,27 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using OP.General.Extensions;
 
 namespace WebApplication.Controllers
 {
+    public class AddReview
+    {
+        public string Name { get; set; }
+        public string Url { get; set; }
+    }
 
+    public class ResponsePacket
+    {
+        public Boolean Success { get; set; }
+        public string Message { get; set; }
+        public object Data { get; set; }
+    }
 
     public class PublicController : ApiController
     {
 
-       private IAccountService _AccountService;
+        private IAccountService _AccountService;
         private IAdminService _AdminService;
         private IConfiguration _Configuration;
         private IWebsiteReviewService _WebsiteReviewService;
@@ -31,12 +43,21 @@ namespace WebApplication.Controllers
 
 
         // GET api/public
-        public List<WebsiteReview> Get()
+        public ResponsePacket Get()
         {
             string g = "41";
 
-  
-            return _WebsiteReviewService.GetAll(128);
+            List<WebsiteReview> retval = _WebsiteReviewService.GetAll(128);
+
+
+            ResponsePacket resp = new ResponsePacket()
+            {
+                Data = retval,
+                Message = string.Format("{0} records retreieved",retval.Count),
+                Success = true
+            };
+
+            return resp;
         }
 
         // GET api/public/5
@@ -46,8 +67,35 @@ namespace WebApplication.Controllers
         }
 
         // POST api/public
-        public void Post([FromBody]string value)
+        [HttpPost]
+        public HttpResponseMessage Post(AddReview data)
         {
+
+            WebsiteReview newreview = new WebsiteReview()
+            {
+                Name = data.Name.TrimforUI(255, false),
+                URL = data.Url.TrimforUI(255, false)
+            };
+
+            string response = _WebsiteReviewService.Add(newreview);
+
+            ResponsePacket resp = new ResponsePacket()
+               {
+                   Data = string.Empty,
+                   Message = "Failed to add record",
+                   Success = false
+               };
+
+            if (response.IsNotNullOrEmpty())
+            {
+                resp = new ResponsePacket()
+                {
+                    Data = string.Empty,
+                    Message = "Record added",
+                    Success = true
+                };
+            }
+            return Request.CreateResponse(HttpStatusCode.OK, resp);
         }
 
         // PUT api/public/5

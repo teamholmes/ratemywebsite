@@ -40,11 +40,18 @@ namespace MyApp.Business.Services
         {
             if (maxrows.HasValue)
             {
-                return _Repository.GetFiltered<WebsiteReview>((x => x.Id > 0)).Take(maxrows.Value).ToList();
+                return _Repository.GetFiltered<WebsiteReview>((x => x.Id != null)).Take(maxrows.Value).ToList();
 
             }
 
-            return _Repository.GetFiltered<WebsiteReview>((x => x.Id > 0)).ToList();
+            return _Repository.GetFiltered<WebsiteReview>((x => x.Id != null)).ToList();
+        }
+
+
+        public string Add(WebsiteReview review)
+        {
+            review.Id = Guid.NewGuid().ToString();
+            return _Repository.Add<WebsiteReview>(review);
         }
 
 

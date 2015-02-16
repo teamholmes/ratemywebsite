@@ -257,6 +257,7 @@
     <Content Include="Scripts\angular\angular.min.js" />
     <Content Include="Scripts\angular\app.js" />
     <Content Include="Scripts\angular\controller\loginController.js" />
+    <Content Include="Scripts\angular\View\AddReview.html" />
     <Content Include="Scripts\angular\View\websitelist.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

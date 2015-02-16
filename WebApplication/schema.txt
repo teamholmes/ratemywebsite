@@ -214,7 +214,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[WebsiteReview](
-	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Id] [nvarchar](128) NOT NULL,
 	[Name] [nvarchar](255) NOT NULL,
 	[URL] [nvarchar](255) NOT NULL
 ) ON [PRIMARY]
@@ -228,7 +228,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[WebsiteReviewDetail](
-	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Id] [nvarchar](128) NOT NULL,
 	[WebsiteReviewId] [int] NOT NULL,
 	[DesignRating] [int] NULL,
 	[FunctionalityRating] [int] NULL,
