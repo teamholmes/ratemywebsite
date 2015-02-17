@@ -51,7 +51,21 @@ namespace MyApp.Business.Services
         public string Add(WebsiteReview review)
         {
             review.Id = Guid.NewGuid().ToString();
+            review.DateAdded = DateTime.Now;
             return _Repository.Add<WebsiteReview>(review);
+        }
+
+
+        public Boolean IsURLValid(string url)
+        {
+
+            Uri uriResult;
+            bool result = Uri.TryCreate(url, UriKind.Absolute, out uriResult)
+                          && (uriResult.Scheme == Uri.UriSchemeHttp
+                              || uriResult.Scheme == Uri.UriSchemeHttps);
+
+
+           return (result == null || result == false) ? false : true;
         }
 
 

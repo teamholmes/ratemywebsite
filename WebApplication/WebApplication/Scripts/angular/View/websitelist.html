@@ -1,1 +1,3 @@
-﻿<p ng-repeat="website in reviewWebsites | filter:filterquery" data-ng-click="selectItem(website)">{{website.Name}}</p>
+﻿<p ng-repeat="website in reviewWebsites | filter:filterquery" data-ng-click="selectItem(website)">
+    <a href="{{website.URL}}" target="_blank">{{website.Name}}</a>
+    </p>

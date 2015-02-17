@@ -95,7 +95,7 @@ namespace MyApp.DAL.Repository
 
             modelBuilder.Entity<ApplicationUserClaim>().HasRequired(t => t.ApplicationUser).WithMany(u => u.Claims).HasForeignKey(t => t.UserId);
 
-           // modelBuilder.Entity<WebsiteReviewDetail>().HasRequired(t => t.WebsiteReview).WithMany(u => u.Reviews).HasForeignKey(t => t.WebsiteReviewId);
+            modelBuilder.Entity<WebsiteReviewDetail>().HasRequired(t => t.WebsiteReview).WithMany(u => u.Reviews).HasForeignKey(t => t.WebsiteReviewId);
 
 
         }

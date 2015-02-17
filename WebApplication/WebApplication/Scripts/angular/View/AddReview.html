@@ -1,7 +1,9 @@
 ﻿
 <form ng-submit="addReview()" >
-    Enter text and hit enter:
-    <p>Name : <input type="text" ng-model="form.Name" /></p>
-    <p>URL : <input type="text" ng-model="form.Url" /></p>
-    <input type="submit" id="submit" value="Submit" />
+    <div>
+        Enter a new website for review :
+        <p>Name : <input type="text" ng-model="form.Name" /></p>
+        <p>URL : <input type="text" ng-model="form.Url" placeholder="http://" /></p>
+        <input type="submit" id="submit" value="Submit" />
+    </div>
 </form>

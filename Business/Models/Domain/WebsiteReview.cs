@@ -12,12 +12,13 @@ namespace MyApp.Business.DomainObjects.Models
         public string Id { get; set; }
         public string Name { get; set; }
         public string URL { get; set; }
+        public DateTime DateAdded { get; set; }
 
-        //public virtual List<WebsiteReviewDetail> Reviews { get; set; }
+        public virtual List<WebsiteReviewDetail> Reviews { get; set; }
 
         public WebsiteReview()
         {
-           // Reviews = new List<WebsiteReviewDetail>();
+            Reviews = new List<WebsiteReviewDetail>();
         }
 
     }

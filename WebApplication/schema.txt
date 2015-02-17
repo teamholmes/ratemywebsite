@@ -207,8 +207,7 @@ ALTER TABLE [dbo].[AspNetUserRoles] CHECK CONSTRAINT [FK_dbo.AspNetUserRoles_dbo
 GO
 
 
-/****** Object:  Table [dbo].[WebsiteReview]    Script Date: 16/02/2015 13:53:31 ******/
-
+/****** Object:  Table [dbo].[WebsiteReview]    Script Date: 17/02/2015 14:44:56 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -216,7 +215,8 @@ GO
 CREATE TABLE [dbo].[WebsiteReview](
 	[Id] [nvarchar](128) NOT NULL,
 	[Name] [nvarchar](255) NOT NULL,
-	[URL] [nvarchar](255) NOT NULL
+	[URL] [nvarchar](255) NOT NULL,
+	[DateAdded] [datetime] NULL
 ) ON [PRIMARY]
 
 GO
@@ -229,7 +229,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[WebsiteReviewDetail](
 	[Id] [nvarchar](128) NOT NULL,
-	[WebsiteReviewId] [int] NOT NULL,
+	[WebsiteReviewId] [nvarchar](128) NOT NULL,
 	[DesignRating] [int] NULL,
 	[FunctionalityRating] [int] NULL,
 	[ContentRating] [int] NULL,

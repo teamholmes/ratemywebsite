@@ -74,6 +74,22 @@ namespace WebApplication.Controllers
         public HttpResponseMessage Post(AddReview data)
         {
 
+            ResponsePacket resp = new ResponsePacket()
+            {
+                ResultData = string.Empty,
+                Message = "Failed to add record",
+                Success = false
+            };
+
+            // is data valid
+
+            if (!_WebsiteReviewService.IsURLValid(data.Url))
+            {
+                resp.Message = "Invalid URL";
+                return Request.CreateResponse(HttpStatusCode.OK, resp);
+            }
+
+
             WebsiteReview newreview = new WebsiteReview()
             {
                 Name = data.Name.TrimforUI(255, false),
@@ -82,12 +98,7 @@ namespace WebApplication.Controllers
 
             string response = _WebsiteReviewService.Add(newreview);
 
-            ResponsePacket resp = new ResponsePacket()
-               {
-                   ResultData = string.Empty,
-                   Message = "Failed to add record",
-                   Success = false
-               };
+           
 
             if (response.IsNotNullOrEmpty())
             {
@@ -110,5 +121,8 @@ namespace WebApplication.Controllers
         public void Delete(int id)
         {
         }
+
+
+        
     }
 }
