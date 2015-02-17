@@ -92,9 +92,10 @@ namespace MyApp.DAL.Repository
             modelBuilder.Configurations.Add(new ApplicationUserClaimMap());
             modelBuilder.Configurations.Add(new WebsiteReviewMap());
             modelBuilder.Configurations.Add(new WebsiteReviewDetailMap());
-            
+
             modelBuilder.Entity<ApplicationUserClaim>().HasRequired(t => t.ApplicationUser).WithMany(u => u.Claims).HasForeignKey(t => t.UserId);
 
+           // modelBuilder.Entity<WebsiteReviewDetail>().HasRequired(t => t.WebsiteReview).WithMany(u => u.Reviews).HasForeignKey(t => t.WebsiteReviewId);
 
 
         }

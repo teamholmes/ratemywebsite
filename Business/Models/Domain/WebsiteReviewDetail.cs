@@ -6,6 +6,7 @@ using OP.General;
 
 namespace MyApp.Business.DomainObjects.Models
 {
+  
     public class WebsiteReviewDetail
     {
 
@@ -15,6 +16,9 @@ namespace MyApp.Business.DomainObjects.Models
         public string FunctionalityRating { get; set; }
         public string ContentRating { get; set; }
         public string Comment { get; set; }
+
+
+        public virtual WebsiteReview WebsiteReview { get; set; }
 
         public WebsiteReviewDetail()
         {

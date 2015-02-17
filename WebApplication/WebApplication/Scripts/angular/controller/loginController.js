@@ -74,9 +74,11 @@ appModule.controller('loginController', ['$scope', '$http', function ($scope, $h
 
         })
                 .success(function (data, status, headers, config) {
-                    $scope.reviewWebsites = data;
+                    if (data.Success == true) {
+                        $scope.reviewWebsites = data.ResultData;
+                    }
                     $scope.isLoading = false;
-                    $scope.statusText = "";
+                    $scope.statusText = data.Message;
                 })
                 .error(function (data, status, headers, config) {
                     $scope.statusText = errorrTextDefault + " " + status + " " + data;

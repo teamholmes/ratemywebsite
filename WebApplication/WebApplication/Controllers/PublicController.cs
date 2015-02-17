@@ -7,6 +7,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using OP.General.Extensions;
+using Newtonsoft.Json;
 
 namespace WebApplication.Controllers
 {
@@ -16,11 +17,12 @@ namespace WebApplication.Controllers
         public string Url { get; set; }
     }
 
+
     public class ResponsePacket
     {
         public Boolean Success { get; set; }
         public string Message { get; set; }
-        public object Data { get; set; }
+        public object ResultData { get; set; }
     }
 
     public class PublicController : ApiController
@@ -49,15 +51,16 @@ namespace WebApplication.Controllers
 
             List<WebsiteReview> retval = _WebsiteReviewService.GetAll(128);
 
-
             ResponsePacket resp = new ResponsePacket()
             {
-                Data = retval,
-                Message = string.Format("{0} records retreieved",retval.Count),
+                ResultData = retval,
+                Message = String.Format("{0} records retrieved",retval.Count),
                 Success = true
             };
 
             return resp;
+
+           // return new string[] { "apples", "bananas", "pears" };
         }
 
         // GET api/public/5
@@ -81,7 +84,7 @@ namespace WebApplication.Controllers
 
             ResponsePacket resp = new ResponsePacket()
                {
-                   Data = string.Empty,
+                   ResultData = string.Empty,
                    Message = "Failed to add record",
                    Success = false
                };
@@ -90,7 +93,7 @@ namespace WebApplication.Controllers
             {
                 resp = new ResponsePacket()
                 {
-                    Data = string.Empty,
+                    ResultData = string.Empty,
                     Message = "Record added",
                     Success = true
                 };

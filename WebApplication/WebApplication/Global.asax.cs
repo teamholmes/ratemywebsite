@@ -7,6 +7,8 @@ using OP.General.MVC;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Formatting;
+using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Web;
 using System.Web.Helpers;
@@ -39,6 +41,15 @@ namespace WebApplication
 
 
             AntiForgeryConfig.UniqueClaimTypeIdentifier = ClaimTypes.Email;
+
+
+            // force data to be returned as json
+                    GlobalConfiguration.Configuration.Formatters.JsonFormatter.MediaTypeMappings.Add(
+            new QueryStringMapping("type", "json", new MediaTypeHeaderValue("application/json")));
+
+    //        GlobalConfiguration.Configuration.Formatters.Clear();
+    //        GlobalConfiguration.Configuration.Formatters.Add(new JsonMediaTypeFormatter());
+
         }
 
         //protected virtual void CreateContainer()
