@@ -1,3 +1,15 @@
-﻿<p ng-repeat="website in reviewWebsites | filter:filterquery" data-ng-click="selectItem(website)">
-    <a href="{{website.URL}}" target="_blank">{{website.Name}}</a>
+﻿<div ng-repeat="website in reviewWebsites | filter:filterquery" data-ng-click="selectItem(website)" class="well">
+    <h4><a href="{{website.URL}}" target="_blank">{{website.Name}}</a></h4>
+        <div>
+            Design {{website.AverageDesignRating}}/5
+            Content {{website.AverageContentRating}}/5
+            Functionality {{website.AverageFunctionalityRating}}/5
+        </div>
+
+    <div class="pull-right dateadded">{{website.DateAdded | date :  'd MMM, yyyy @ h:mma'}}</div>
+
     </p>
+</div>
+
+
+      

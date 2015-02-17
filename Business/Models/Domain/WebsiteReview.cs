@@ -16,6 +16,36 @@ namespace MyApp.Business.DomainObjects.Models
 
         public virtual List<WebsiteReviewDetail> Reviews { get; set; }
 
+        public double AverageDesignRating 
+        {
+            get
+            {
+                return Reviews.Any() ? Reviews.Average(x => x.DesignRating) : 0;
+                
+            }
+            set { }
+        }
+
+        public double AverageContentRating 
+        {
+            get
+            {
+                return Reviews.Any() ? Reviews.Average(x => x.ContentRating) : 0;
+
+            }
+            set { }
+        }
+
+        public double AverageFunctionalityRating 
+        {
+            get
+            {
+                return Reviews.Any() ? Reviews.Average(x => x.FunctionalityRating) : 0;
+
+            }
+            set { }
+        }
+
         public WebsiteReview()
         {
             Reviews = new List<WebsiteReviewDetail>();

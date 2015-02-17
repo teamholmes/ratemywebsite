@@ -53,7 +53,7 @@ namespace WebApplication.Controllers
 
             ResponsePacket resp = new ResponsePacket()
             {
-                ResultData = retval,
+                ResultData = retval.OrderByDescending(x=>x.DateAdded),
                 Message = String.Format("{0} records retrieved",retval.Count),
                 Success = true
             };
@@ -104,7 +104,7 @@ namespace WebApplication.Controllers
             {
                 resp = new ResponsePacket()
                 {
-                    ResultData = string.Empty,
+                    ResultData = newreview,
                     Message = "Record added",
                     Success = true
                 };

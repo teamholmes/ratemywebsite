@@ -216,7 +216,7 @@ CREATE TABLE [dbo].[WebsiteReview](
 	[Id] [nvarchar](128) NOT NULL,
 	[Name] [nvarchar](255) NOT NULL,
 	[URL] [nvarchar](255) NOT NULL,
-	[DateAdded] [datetime] NULL
+	[DateAdded] [datetime] NOT NULL
 ) ON [PRIMARY]
 
 GO

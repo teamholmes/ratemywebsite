@@ -17,6 +17,10 @@ namespace MyApp.Business.DomainObjects.Mapping
             this.Property(t => t.Name).HasColumnName("Name");
             this.Property(t => t.URL).HasColumnName("URL");
             this.Property(t => t.DateAdded).HasColumnName("DateAdded");
+
+            this.Ignore(x => x.AverageDesignRating);
+            this.Ignore(x => x.AverageContentRating);
+            this.Ignore(x => x.AverageFunctionalityRating);
         }
     }
 }

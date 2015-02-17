@@ -12,9 +12,9 @@ namespace MyApp.Business.DomainObjects.Models
 
         public string Id { get; set; }
         public string WebsiteReviewId { get; set; }
-        public string DesignRating { get; set; }
-        public string FunctionalityRating { get; set; }
-        public string ContentRating { get; set; }
+        public int DesignRating { get; set; }
+        public int FunctionalityRating { get; set; }
+        public int ContentRating { get; set; }
         public string Comment { get; set; }
 
 

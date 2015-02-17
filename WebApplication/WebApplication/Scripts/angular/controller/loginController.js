@@ -46,7 +46,7 @@ appModule.controller('loginController', ['$scope', '$http', function ($scope, $h
 
                     if (data.Success == true)
                     {
-                        $scope.reviewWebsites.push(newReview);
+                        $scope.reviewWebsites.push(data.ResultData);
                     }
 
                     $scope.isLoading = false;

@@ -10,81 +10,35 @@
     <h2>Let's get started</h2>
 
     <div class="row clearfix">
-        <div id="filterquery" ng-show="reviewWebsites.length > 0">
-            Filteron : <input type="text" ng-model="filterquery" />
-        </div>
-        <div class="col-md-6">
-            <div id="listing" websitelist></div>
 
-            <p>{{statusText}}</p>
 
-            
-            <div id="addanewreview" addreview></div>
-        </div>
-
-        @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
-        {
-            @Html.AntiForgeryToken()
+        <div class="row">
             <div class="col-md-6">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Login</div>
-                    <div class="panel-body">
-
+                <nav class="navbar navbar-default">
+                    <form class="navbar-form navbar-left" role="search" ng-show="reviewWebsites.length > 0">
                         <div class="form-group">
-                            <label class="col-md-4 control-label">@WebApplication.Resources.EVAResource.emailaddress</label>
-
-                            <div class="col-md-8">
-                                @Html.TextBoxFor(m => m.EmailAddress, new { MaxLength = "100", @class = "form-control", type = "email", autocapitalize = "off" })
-                                @Html.ValidationMessageFor(m => m.EmailAddress)
-                            </div>
+                             <input type="text" class="form-control" placeholder="Filter list" ng-model="filterquery">
                         </div>
-
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">Passphrase</label>
-
-                            <div class="col-md-8">
-                                @Html.PasswordFor(m => m.Passphrase, new { MaxLength = "100", @class = "form-control" })
-                                @Html.ValidationMessageFor(m => m.Passphrase)
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">Verification code</label>
-
-                            <div class="col-md-3">
-                                @Html.TextBoxFor(m => m.Captcha, new { MaxLength = "7", @class = "form-control", autocomplete = "off", autocapitalize = "off" })
-                                @Html.ValidationMessageFor(m => m.Captcha)
-                                @Html.HiddenFor(x => x.EncryptedCaptcha)
-                            </div>
-
-                            <div class="col-md-5">
-                                <img src="/Account/GetCaptchaImage?enid=@Model.EncryptedCaptcha&cachecode=@DateTime.Now.Ticks&rnd=@Model.RandomInt" class="captchimage" />
-
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-md-4"></label>
-
-                            <div class="col-md-8">
-                                @Html.SubmitButton(@WebApplication.Resources.EVAResource.submit)
-                            </div>
-
-                        </div>
-                        <p class="linebreaktop">@Html.ActionLink(@WebApplication.Resources.EVAResource.createanewaccount, "CreateAccount", null, new { @class = "ifs-link-btn" })</p>
-
-                        <p>@Html.ActionLink(@WebApplication.Resources.EVAResource.helpwithaccountproblems, "ForgottenPassPhrase", null, new { @class = "ifs-link-btn" })</p>
-
-
-
-                    </div>
-
-
-                </div>
-
+                    </form>
+                </nav>
             </div>
+        </div>
 
-        }
+        <div class="row">
+            <div class="col-md-6">
+                <div id="listing" websitelist></div>
+
+                <p>{{statusText}}</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div id="addanewreview" addreview></div>
+            </div>
+        </div>
+
 
 
     </div>
